@@ -1,0 +1,4 @@
+Install-Package EntityFramework -Version 6.1.3
+
+Install-Package EntityFramework.Firebird -Version 4.5.0
+
