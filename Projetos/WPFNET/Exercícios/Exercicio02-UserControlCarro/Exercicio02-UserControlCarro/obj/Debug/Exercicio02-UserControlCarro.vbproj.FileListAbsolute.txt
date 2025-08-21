@@ -1,0 +1,17 @@
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio02-UserControlCarro\bin\Debug\Exercicio02-UserControlCarro.exe.config
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\bin\Debug\Exercicio02-UserControlCarro.exe.config
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\bin\Debug\Exercicio02-UserControlCarro.exe
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\bin\Debug\Exercicio02-UserControlCarro.pdb
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\bin\Debug\Exercicio02-UserControlCarro.xml
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Cadastros\ucCadAutomovel.baml
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\MainWindow.baml
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Cadastros\ucCadAutomovel.g.vb
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\MainWindow.g.vb
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Application.g.vb
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro_MarkupCompile.cache
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro.g.resources
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02_UserControlCarro.Resources.resources
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro.vbproj.GenerateResource.Cache
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro.exe
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro.xml
+Z:\Treinamento\eduty\exercícios\Exercicio02-UserControlCarro\Exercicio02-UserControlCarro\obj\Debug\Exercicio02-UserControlCarro.pdb

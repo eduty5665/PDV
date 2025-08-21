@@ -1,0 +1,92 @@
+﻿<Window x:Class="wdLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Cadastro de Produtos" Height="600" Width="800" 
+    WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" KeyDown="Window_KeyDown_1">
+
+    <Window.Resources>
+        <Color x:Key="BlueSizex">#FF537A7D</Color>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Definição da imagem de fundo -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/ProjetoGridDesignMelhorado;component/Imagens/Fundo.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <!-- Definição das linhas da grid principal -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <!-- Cabeçalho -->
+            <RowDefinition Height="*"/>
+            <!-- Conteúdo central -->
+            <RowDefinition Height="40"/>
+            <!-- Rodapé -->
+        </Grid.RowDefinitions>
+
+        <!-- Cabeçalho -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="{DynamicResource cor-titulo}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Titlelbl" Content="- Login" 
+                   VerticalAlignment="Center" FontWeight="Bold" FontFamily="Calibri" 
+                   FontSize="22" Foreground="White"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button x:Name="SaiBtn" IsCancel="True" Content="X" HorizontalAlignment="Right" Height="20" Width="20" Margin="0,5,5,5" FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" Background="White" BorderBrush="White" TabIndex="17" IsTabStop="False"/>
+            </Grid>
+        </Grid>
+
+        <!-- Conteúdo central -->
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Campo Nome -->
+            <Grid Grid.Row="0">
+                <Label x:Name="Nomelbl" Content="Nome: " FontWeight="Bold" 
+                       FontFamily="Bernard MT Condensed" FontSize="18" 
+                       Foreground="#FFC5CD39" VerticalAlignment="Center"/>
+                <TextBox x:Name="Nometxt" Margin="5,40,0,0" Width="260" 
+                         BorderBrush="#FF7189CF" TextAlignment="Left" 
+                         CharacterCasing="Upper"/>
+            </Grid>
+
+            <!-- Campo Senha -->
+            <Grid Grid.Row="1" Margin="0,0,0,0">
+                <Label x:Name="Senhalbl" Content="Senha: " FontWeight="Bold" 
+                       FontFamily="Bernard MT Condensed" FontSize="18" 
+                       Foreground="#FFC5CD39" VerticalAlignment="Center"/>
+                <PasswordBox x:Name="Senhatxt" Margin="5,40,0,0" Width="260" 
+                         BorderBrush="#FF7189CF" />
+            </Grid>
+
+            <!-- Botões -->
+            <Grid Grid.Row="2" HorizontalAlignment="Center" Margin="0,25,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="EntrarBtn" Content="Entrar [Enter]" 
+                        Grid.Column="0" Margin="0,0,0,0" 
+                        FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" 
+                        Background="#FFE5E8B6" BorderBrush="White"/>
+
+                <Button x:Name="SairBtn" Content="Sair [ESC]" 
+                        Grid.Column="1" Margin="0,0,0,0" 
+                        FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" 
+                        Background="#FFE5E8B6" BorderBrush="White"/>
+            </Grid>
+        </Grid>
+
+        <!-- Rodapé -->
+        <Grid Grid.Row="2" Background="{DynamicResource cor-rodape}"/>
+    </Grid>
+</Window>

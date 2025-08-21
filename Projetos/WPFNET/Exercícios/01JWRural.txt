@@ -1,0 +1,9 @@
+VISAO GERAL - TELA BANCO - SISTEMA RURAL
+
+linha 1 --> titulo(Cadstro de Banco) && botoes(addF2, salvarF3, excluirF4, sairESC)
+linha 2 --> Subtitulo(Financeiro/Banco)
+linha 3 --> 3colunas (label + txt) : codigo(150), sigla(100) e nome(*)
+linha 4 --> 1coluna (Pesquisa por nome F6) : auto ou *
+linha 5 --> datagrid * com dados do banco (3colunas)
+Banco(codigo)150  || Sigla100  || Nome *
+

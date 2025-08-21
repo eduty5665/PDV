@@ -1,0 +1,111 @@
+﻿<Window x:Class="wdCadProduto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Cadastro de Produtos" Height="400" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="CodigoLbl" Content="Código: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Codigotxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TextAlignment="Right" TabIndex="0"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Label x:Name="DescLbl" Content="Descrição: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Desctxt" HorizontalAlignment="Stretch" Margin="5,23,0,0" TextWrapping="Wrap" TabIndex="1" CharacterCasing="Upper"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Label x:Name="Datalbl" Content="Data:" HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <DatePicker x:Name="Datatxt" HorizontalAlignment="Stretch" Margin="5,23,0,0" TabIndex="2"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <GroupBox x:Name="Movigrp" Header="Movimentação: " HorizontalAlignment="Stretch" Margin="5,23,5,0" FontSize="14" FontWeight="Bold" FontFamily="Calibri">
+                    <Grid>
+                        <RadioButton x:Name="Simrdb" Content="Sim" HorizontalAlignment="Left" Margin="5,5,0,0" IsChecked="True" IsTabStop="False" />
+                        <RadioButton x:Name="Naordb" Content="Não" HorizontalAlignment="Right" Margin="5,5,0,0" IsTabStop="False"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Grupolbl" Content="Grupo: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Grupotxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TextAlignment="Right" TabIndex="3" CharacterCasing="Upper"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Label x:Name="Tipolbl" Content="Tipo: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <ComboBox x:Name="Tipocmb" HorizontalAlignment="Stretch" Margin="5,23,-0,0" FontFamily="Calibri" FontSize="14" TabIndex="4">
+                    <ComboBoxItem Content="Materia Prima"/>
+                    <ComboBoxItem Content="Acabado"/>
+                    <ComboBoxItem Content="Embalagem"/>
+                    <ComboBoxItem Content="Insumo"/>
+                </ComboBox>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Label x:Name="Custolbl" Content="Custo: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Custotxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TextAlignment="Right" TabIndex="5"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Label x:Name="Margemlbl" Content="Margem: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Margemtxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TextAlignment="Right" TabIndex="6"/>
+            </Grid>
+            <Grid Grid.Column="4">
+                <Label x:Name="Precolbl" Content="Preço: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                <TextBox x:Name="Precotxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TextAlignment="Right" TabIndex="7"/>
+            </Grid>
+            <Grid Grid.Column="5">
+                <CheckBox Content="INATIVO" Margin="5,25,5,0" FontWeight="Bold"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <DataGrid HorizontalAlignment="Stretch" Margin="5,5,5,5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Código" Width="60"/>
+                    <DataGridTextColumn Header="Descrição do Produto" Width="*"/>
+                    <DataGridTextColumn Header="Grupo" Width="150"/>
+                    <DataGridTextColumn Header="Custo" Width="80"/>
+                    <DataGridTextColumn Header="Preço" Width="80"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+        </Grid>
+        <Grid Grid.Row="3" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Button x:Name="NovoBtn" Content="Novo [F2]" HorizontalAlignment="Stretch" Margin="0,0,5,5" Height="20" VerticalAlignment="Bottom" FontSize="14" FontFamily="Calibri" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button x:Name="SalvarBtn" Content="Salvar [F3]" HorizontalAlignment="Stretch" Margin="0,0,5,5" Height="20" VerticalAlignment="Bottom" FontSize="14" FontFamily="Calibri" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button x:Name="ExcluirBtn" Content="Excluir [F4]" HorizontalAlignment="Stretch" Margin="0,0,5,5" Height="20" VerticalAlignment="Bottom" FontSize="14" FontFamily="Calibri" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Button x:Name="SairBtn" Content="Sair [ESC]" HorizontalAlignment="Stretch" Margin="0,0,5,5" Height="20" VerticalAlignment="Bottom" FontSize="14" FontFamily="Calibri" FontWeight="Bold"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+C:\Users\admin\AppData\Local\Temporary Projects\ProjetoGridLayout\bin\Debug\ProjetoGridLayout.exe.config
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\bin\Debug\ProjetoGridLayout.exe.config
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\bin\Debug\ProjetoGridLayout.exe
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\bin\Debug\ProjetoGridLayout.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\bin\Debug\ProjetoGridLayout.xml
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\Janelas\wdCadProduto.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\MainWindow.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\Janelas\wdCadProduto.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\MainWindow.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\Application.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout_MarkupCompile.cache
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.g.resources
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.Resources.resources
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.vbproj.GenerateResource.Cache
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.exe
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.xml
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridLayout\ProjetoGridLayout\obj\Debug\ProjetoGridLayout.vbprojResolveAssemblyReference.cache

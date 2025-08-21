@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ctTextBox
+</name>
+</assembly>
+<members>
+<member name="P:ctTextBox.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ctTextBox.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ctTextBox.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:ctTextBox.ctMaskBox.MaskProvider">
+	<summary>
+ Gets the MaskTextProvider for the specified Mask
+ </summary>
+</member><member name="P:ctTextBox.ctMaskBox.Mask">
+	<summary>
+ Gets or sets the mask to apply to the textbox
+ </summary>
+</member><member name="F:ctTextBox.ctMaskBox.MaskProperty">
+	<summary>
+ Dependency property to store the mask to apply to the textbox
+ </summary>
+</member><member name="M:ctTextBox.ctMaskBox.#cctor">
+	<summary>
+ Static Constructor
+ </summary>
+</member><member name="M:ctTextBox.ctMaskBox.#ctor">
+	<summary>
+ Default  constructor
+</summary>
+</member><member name="M:ctTextBox.ctMaskBox.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)">
+	<summary>
+ override this method to replace the characters enetered with the mask
+ </summary>
+	<param name="e">Arguments for event</param>
+</member><member name="M:ctTextBox.ctMaskBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+	<summary>
+ override the key down to handle delete of a character
+ </summary>
+	<param name="e">Arguments for the event</param>
+</member><member name="T:ctTextBox.ctMaskBox">
+	<summary>
+ Masked textbox control is a text box that can have a mask for the text
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,209 @@
+﻿<UserControl x:Class="ucCadAutomovel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ctTextBox="clr-namespace:ctTextBox;assembly=ctTextBox"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600" Tag="Veiculos">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="VeiculosViewSource" Source="{Binding Veiculos}"/>
+        <CollectionViewSource x:Key="AbastecimentoViewSource" Source="{Binding Abastecimento}"/>
+    </UserControl.Resources>
+    <Grid Background="Gainsboro">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="{DynamicResource cor-titulo}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label x:Name="Titlelbl" Content="- Cadastro de Automoveis" HorizontalAlignment="Left" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="22" Foreground="White"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Label x:Name="Datelbl" Content="Data:" HorizontalAlignment="Right" Margin="0,0,150,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="22" Background="#00000000" Foreground="White"/>
+                <DatePicker x:Name="Datatxt" Grid.Column="2" HorizontalAlignment="Right" Margin="5,7,5,0" VerticalAlignment="Top" TabIndex="0"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button x:Name="SairBtn" IsCancel="True" Content="X" HorizontalAlignment="Right" Height="20" Width="20" Margin="0,5,5,5" FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" Background="White" BorderBrush="White" TabIndex="17" IsTabStop="False"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <TabControl>
+                <TabItem Name="CadTB" Header="Cadastro">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Label x:Name="PlacaLbl" Content="Placa: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="Placatxt" Margin="5,23,0,-0" TextWrapping="Wrap" TabIndex="0" BorderBrush="#FF7189CF" TextAlignment="Right" CharacterCasing="Upper"/>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Label x:Name="DescLbl" Content="Descrição: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="Desctxt" HorizontalAlignment="Stretch" Margin="5,23,0,0" TextWrapping="Wrap" TabIndex="1" CharacterCasing="Upper" BorderBrush="#FF7189CF"/>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Label x:Name="CombLbl" Content="Combustivel: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <ComboBox x:Name="Combcmb" HorizontalAlignment="Stretch" Margin="5,23,-0,0" FontFamily="Calibri" FontSize="14" TabIndex="2" BorderBrush="#FF7189CF">
+                                    <ComboBoxItem Content="FLEX"/>
+                                    <ComboBoxItem Content="ETANOL"/>
+                                    <ComboBoxItem Content="GASOLINA"/>
+                                    <ComboBoxItem Content="DIESEL"/>
+                                </ComboBox>
+                            </Grid>
+                            <Grid Grid.Column="3">
+                                <Label x:Name="UltKMLbl" Content="Ultimo KM: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="UltKMtxt" HorizontalAlignment="Stretch" Margin="5,23,5,0" TextWrapping="Wrap" TabIndex="3" CharacterCasing="Upper" BorderBrush="#FF7189CF" TextAlignment="Right"/>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Label x:Name="ValorCompbl" Content="Valor da Compra: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="ValorComptxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TabIndex="4" CharacterCasing="Upper" BorderBrush="#FF7189CF" TextAlignment="Right"/>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Label x:Name="DataComplbl" Content="Data da Compra:" HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <DatePicker x:Name="DataComptxt" HorizontalAlignment="Stretch" Margin="5,23,0,0" TabIndex="5" IsTabStop="True">
+                                    <DatePicker.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                                            <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                                            <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                                            <GradientStop Color="#FF718597" Offset="0.375"/>
+                                            <GradientStop Color="#FF7189CF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </DatePicker.BorderBrush>
+                                </DatePicker>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Label x:Name="TipoCompLbl" Content="Tipo de Pagamento: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <ComboBox x:Name="TipoCompcmb" HorizontalAlignment="Stretch" Margin="5,23,5,0" FontFamily="Calibri" FontSize="14" TabIndex="6" BorderBrush="#FF7189CF">
+                                    <ComboBoxItem Content="A VISTA"/>
+                                    <ComboBoxItem Content="FINANCIAMENTO"/>
+                                    <ComboBoxItem Content="CREDITO"/>
+                                </ComboBox>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2" Margin="5,5,5,5" Background="{DynamicResource cor-barra}"/>
+                        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Label x:Name="DataAbastlbl" Content="Data do Abastecimento:" HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <DatePicker x:Name="DataAbasttxt" HorizontalAlignment="Stretch" Margin="5,23,0,0" TabIndex="7" IsTabStop="True">
+                                    <DatePicker.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                                            <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                                            <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                                            <GradientStop Color="#FF718597" Offset="0.375"/>
+                                            <GradientStop Color="#FF7189CF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </DatePicker.BorderBrush>
+                                </DatePicker>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Label x:Name="KMAbastlbl" Content="KM do Automovel: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="KMAbasttxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TabIndex="8" BorderBrush="#FF7189CF" TextAlignment="Right" CharacterCasing="Upper"/>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Label x:Name="QtdLitlbl" Content="Litros: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="QtdLittxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TabIndex="9" BorderBrush="#FF7189CF" TextAlignment="Right" CharacterCasing="Upper"/>
+                            </Grid>
+                            <Grid Grid.Column="3">
+                                <Label x:Name="ValorTotlbl" Content="Valor Total: " HorizontalAlignment="Stretch" Margin="0,0,0,-0" Grid.Row="0" FontWeight="Bold" FontFamily="Calibri" FontSize="14"/>
+                                <TextBox x:Name="ValorTottxt" HorizontalAlignment="Stretch" Margin="5,23,5,-0" TextWrapping="Wrap" TabIndex="10" BorderBrush="#FF7189CF" TextAlignment="Right" CharacterCasing="Upper"/>
+                            </Grid>
+                            <Grid Grid.Column="4">
+                                <Button x:Name="MaisBtn" Content="+" HorizontalAlignment="Right" Margin="0,23,5,0" Width="20" Height="20" Background="{DynamicResource cor-bottomAdd}" Foreground="White" BorderBrush="{DynamicResource cor-bottomAdd}" FontFamily="Calibri" FontWeight="ExtraBold" TabIndex="11"/>
+                            </Grid>
+                            <Grid Grid.Column="5">                               
+                                <Button x:Name="MenosBtn" Content="-" HorizontalAlignment="Stretch" Margin="0,23,5,0" Width="20" Height="20" Background="{DynamicResource cor-bottomLess}" Foreground="White" BorderBrush="{DynamicResource cor-bottomLess}" FontWeight="ExtraBold" FontFamily="Calibri" TabIndex="12"/>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="4">
+                            <DataGrid ItemsSource="{Binding Source={StaticResource AbastecimentoViewSource}}" HorizontalAlignment="Stretch" Margin="5,5,5,5" AutoGenerateColumns="False" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Data do Abastecimento" Width="*" Binding="{Binding DataAbast}"/>
+                                    <DataGridTextColumn Header="Km do Automovel" Width="*" Binding="{Binding KMVeiculo}"/>
+                                    <DataGridTextColumn Header="Litros (QTD)" Width="*" Binding="{Binding Litros}"/>
+                                    <DataGridTextColumn Header="Valor Total" Width="*" Binding="{Binding ValorTotal}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </Grid>
+                </TabItem>
+                <TabItem Name="PesTB" Header="Pesquisa">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Label x:Name="PesLbl" Content="Pesquisa (Descrição):" HorizontalAlignment="Stretch" Margin="0,0,5,0" Grid.Row="0" FontFamily="Calibri" FontSize="14"/>
+                            <TextBox x:Name="PesTxt" HorizontalAlignment="Stretch" Margin="5,20,5,0" TextWrapping="Wrap" TabIndex="13" BorderBrush="#FF7189CF" CharacterCasing="Upper"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                        <DataGrid x:Name="VeiculosDataGrid1" HorizontalAlignment="Stretch" Margin="5,5,5,5" ItemsSource="{Binding Source={StaticResource VeiculosViewSource}}" AutoGenerateColumns="False" IsReadOnly="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Placa" Width="100" Binding="{Binding Placa}"/>
+                                <DataGridTextColumn Header="Descrição" Width="*" Binding="{Binding Descricao}"/>
+                                <DataGridTextColumn Header="Combustivel" Width="100" Binding="{Binding Combustivel}"/>
+                                <DataGridTextColumn Header="Valor" Width="100" Binding="{Binding ValorCompra}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                   </Grid> 
+                </TabItem> 
+            </TabControl>
+        </Grid>
+        <Grid Grid.Row="2" HorizontalAlignment="Stretch" Background="{DynamicResource cor-rodape}">
+            <Grid Grid.Row="0" HorizontalAlignment="Right">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="NovoBtn" Content="Novo [F2]" HorizontalAlignment="Stretch" Margin="0,5,5,5"  FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" BorderBrush="White" Background="White"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="SalvarBtn" Content="Salvar [F3]" HorizontalAlignment="Stretch" Margin="0,5,5,5"  FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" Background="White" BorderBrush="White"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="ExcluirBtn" Content="Excluir [F4]" HorizontalAlignment="Stretch" Margin="0,5,5,5" FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" Background="White" BorderBrush="White"/>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="SaiBtn" Content="Sair [ESC]" HorizontalAlignment="Stretch" Margin="0,5,5,5" FontSize="14" FontFamily="Calibri" FontWeight="SemiBold" Background="White" BorderBrush="White"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        </Grid> 
+   </UserControl>

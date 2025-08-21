@@ -1,0 +1,2 @@
+Z:\Treinamento\eduty\exercícios\VB.Net\Produto01-VB\Produto01-VB\bin\Debug\Produto01-VB.exe.config
+Z:\Treinamento\eduty\exercícios\Produto01-VB\Produto01-VB\bin\Debug\Produto01-VB.exe.config

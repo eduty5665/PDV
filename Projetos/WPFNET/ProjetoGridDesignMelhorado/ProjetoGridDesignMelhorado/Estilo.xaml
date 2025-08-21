@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- CORES -->
+
+    <Color x:Key="bg-primary">#abb3b4</Color>
+    <Color x:Key="bg-cor-titulo">#547a7d</Color>
+    <Color x:Key="bg-cor-barra">black</Color>
+    <Color x:Key="bg-cor-bottomAdd">#FF5DFF00</Color>
+    <Color x:Key="bg-cor-bottomLess">Red</Color>
+    <Color x:Key="bg-cor-bottomMenu">#FF537A7D</Color>
+    <Color x:Key="bg-cor-rodape">#c5cd39</Color>
+
+    <SolidColorBrush x:Key="primary" Color="{DynamicResource bg-primary}"/>
+    <SolidColorBrush x:Key="cor-titulo" Color="{DynamicResource bg-cor-titulo}"/>
+    <SolidColorBrush x:Key="cor-barra" Color="{DynamicResource bg-cor-barra}"/>
+    <SolidColorBrush x:Key="cor-bottomAdd" Color="{DynamicResource bg-cor-bottomAdd}"/>
+    <SolidColorBrush x:Key="cor-bottomLess" Color="{DynamicResource bg-cor-bottomLess}"/>
+    <SolidColorBrush x:Key="cor-bottomMenu" Color="{DynamicResource bg-cor-bottomMenu}"/>
+    <SolidColorBrush x:Key="cor-rodape" Color="{DynamicResource bg-cor-rodape}"/>
+
+</ResourceDictionary>

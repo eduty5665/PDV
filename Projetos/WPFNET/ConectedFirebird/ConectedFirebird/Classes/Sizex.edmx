@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Sizex.Store" Provider="FirebirdSql.Data.FirebirdClient" ProviderManifestToken="2.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PESSOA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME" Type="varchar" MaxLength="200" Unicode="true" />
+          <Property Name="ENDERECO" Type="varchar" MaxLength="200" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PESSOACONTATOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PESSOAID" Type="int" />
+        </EntityType>
+        <Association Name="FK_PESSOACONTATOS_1">
+          <End Role="PESSOA" Type="Self.PESSOA" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PESSOACONTATOS" Type="Self.PESSOACONTATOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PESSOA">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PESSOACONTATOS">
+              <PropertyRef Name="PESSOAID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SizexStoreContainer">
+          <EntitySet Name="PESSOA" EntityType="Self.PESSOA" Schema="Firebird" store:Type="Tables" />
+          <EntitySet Name="PESSOACONTATOS" EntityType="Self.PESSOACONTATOS" Schema="Firebird" store:Type="Tables" />
+          <AssociationSet Name="FK_PESSOACONTATOS_1" Association="Self.FK_PESSOACONTATOS_1">
+            <End Role="PESSOA" EntitySet="PESSOA" />
+            <End Role="PESSOACONTATOS" EntitySet="PESSOACONTATOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Sizex" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PESSOA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ENDERECO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PESSOACONTATOS" Relationship="Self.FK_PESSOACONTATOS_1" FromRole="PESSOA" ToRole="PESSOACONTATOS" />
+        </EntityType>
+        <EntityType Name="PESSOACONTATOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PESSOAID" Type="Int32" />
+          <NavigationProperty Name="PESSOA" Relationship="Self.FK_PESSOACONTATOS_1" FromRole="PESSOACONTATOS" ToRole="PESSOA" />
+        </EntityType>
+        <Association Name="FK_PESSOACONTATOS_1">
+          <End Role="PESSOA" Type="Self.PESSOA" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PESSOACONTATOS" Type="Self.PESSOACONTATOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PESSOA">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PESSOACONTATOS">
+              <PropertyRef Name="PESSOAID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SizexEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PESSOA" EntityType="Self.PESSOA" />
+          <EntitySet Name="PESSOACONTATOS" EntityType="Self.PESSOACONTATOS" />
+          <AssociationSet Name="FK_PESSOACONTATOS_1" Association="Self.FK_PESSOACONTATOS_1">
+            <End Role="PESSOA" EntitySet="PESSOA" />
+            <End Role="PESSOACONTATOS" EntitySet="PESSOACONTATOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SizexStoreContainer" CdmEntityContainer="SizexEntities">
+          <EntitySetMapping Name="PESSOA">
+            <EntityTypeMapping TypeName="Sizex.PESSOA">
+              <MappingFragment StoreEntitySet="PESSOA">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+                <ScalarProperty Name="ENDERECO" ColumnName="ENDERECO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PESSOACONTATOS">
+            <EntityTypeMapping TypeName="Sizex.PESSOACONTATOS">
+              <MappingFragment StoreEntitySet="PESSOACONTATOS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PESSOAID" ColumnName="PESSOAID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

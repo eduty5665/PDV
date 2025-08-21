@@ -1,0 +1,28 @@
+If objCliente.Nome Is Nothing Then
+            MsgBox("Nome não informado, verifique!", MsgBoxStyle.Exclamation, "Validação")
+            Nometxt.Focus()
+            Exit Sub
+        ElseIf objCliente.CPF Is Nothing Then
+                MsgBox("CPF não informado, verifique!", MsgBoxStyle.Exclamation, "Validação")
+                CPFtxt.Focus()
+                Exit Sub
+            ElseIf Not IsDate(Datatxt.Text) Then
+                    MsgBox("Data não informada, verifique!", MsgBoxStyle.Exclamation, "Validação")
+                    Datatxt.Focus()
+                    Exit Sub
+End If
+
+
+
+Datatxt.Text = ""
+CPFtxt.Text = ""
+RGtxt.Text = ""
+Nometxt.Text = ""
+Statuschk.IsChecked = False
+Endtxt.Text = ""
+NumEndtxt.Text = ""
+BairroEndtxt.Text = ""
+CidEndtxt.Text = ""
+EstEndcmb.Text = ""
+CompEndtxt.Text = ""
+CEPEndtxt.Text = ""

@@ -1,0 +1,2 @@
+C:\Users\admin\AppData\Local\Temporary Projects\ProjetoWindow\bin\Debug\ProjetoWindow.exe.config
+Z:\Treinamento\eduty\projetos\ProjetoWindow\ProjetoWindow\bin\Debug\ProjetoWindow.exe.config

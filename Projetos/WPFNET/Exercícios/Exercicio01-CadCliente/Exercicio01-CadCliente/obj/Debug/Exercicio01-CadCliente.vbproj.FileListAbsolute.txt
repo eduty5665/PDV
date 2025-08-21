@@ -1,0 +1,33 @@
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.exe.config
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.exe
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.pdb
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.xml
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Cadastros\CadastroCLiente.baml
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\MainWindow.baml
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Cadastros\CadastroCLiente.g.vb
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\MainWindow.g.vb
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Application.g.vb
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente_MarkupCompile.cache
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.g.resources
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01_CadCliente.Resources.resources
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.vbproj.GenerateResource.Cache
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.exe
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.xml
+C:\Users\admin\AppData\Local\Temporary Projects\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.pdb
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.exe.config
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.exe
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.xml
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.pdb
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.exe
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.pdb
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\bin\Debug\Exercicio01-CadCliente.xml
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.vbprojResolveAssemblyReference.cache
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\MainWindow.baml
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\MainWindow.g.vb
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Application.g.vb
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente_MarkupCompile.cache
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.g.resources
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01_CadCliente.Resources.resources
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Exercicio01-CadCliente.vbproj.GenerateResource.Cache
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Janelas\wdCadCliente.baml
+Z:\Treinamento\eduty\exercícios\Exercicio01-CadCliente\Exercicio01-CadCliente\obj\Debug\Janelas\wdCadCliente.g.vb

@@ -1,0 +1,46 @@
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.exe.config
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.exe
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.xml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ctTextBox.dll
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\WPFToolkit.dll
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ctTextBox.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ctTextBox.xml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\System.Windows.Controls.Input.Toolkit.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\WPFToolkit.pdb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoFinal.vbprojResolveAssemblyReference.cache
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadAutomovel.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadCliente.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadFoto.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadProduto.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Estilo.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdCadCliente.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdCadProduto.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdLogin.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\MainWindow.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Application.baml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadAutomovel.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadCliente.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadFoto.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Cadastros\ucCadProduto.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdCadCliente.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdCadProduto.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Janelas\wdLogin.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\MainWindow.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\Application.g.vb
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado_MarkupCompile.cache
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.g.resources
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.Resources.resources
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoFinal.vbproj.GenerateResource.Cache
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.exe
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.xml
+Z:\Treinamento\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.pdb
+C:\Users\admin\Downloads\eduty (1)\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.exe.config
+C:\Users\admin\Downloads\eduty (1)\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.exe
+C:\Users\admin\Downloads\eduty (1)\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.xml
+C:\Users\admin\Downloads\eduty (1)\eduty\projetos\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.pdb
+Z:\Treinamento\eduty\Projetos\WPFNET\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\bin\Debug\ProjetoGridDesignMelhorado.exe.config
+Z:\Treinamento\eduty\Projetos\WPFNET\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.exe
+Z:\Treinamento\eduty\Projetos\WPFNET\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.xml
+Z:\Treinamento\eduty\Projetos\WPFNET\ProjetoGridDesignMelhorado\ProjetoGridDesignMelhorado\obj\Debug\ProjetoGridDesignMelhorado.pdb
