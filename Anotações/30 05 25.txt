@@ -1,0 +1,17 @@
+FINALIZAÇÃO DO EXERCICIO
+CONFIG DO STUDIO 19
+
+UPDATE
+
+stualização das tabelas
+voce escolhe um dado, um campo
+e atraves de filtros pode atualizar ela
+
+testar updates com selects de mesma clausula
+pra ver se ta tudo ok
+
+pedir pra geral nao usar o BD enquanto estiver atualizando
+
+SUBCONSULTAS
+selects dentro de selects, selects dentro de updates
+concatenando dados para chegar na tabela em questao

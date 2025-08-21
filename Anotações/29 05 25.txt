@@ -1,0 +1,32 @@
+DELETE
+
+para deletar toda tabela use delete from determinada tabela
+sem colocar o all * na frente
+
+para deletar um campo especifico procure por ele com where e delete da msm forma
+
+INSERT
+
+inserir na tabela tal, determinados atributos com determinado valores
+INSERT INTO FORMAPAGAMENTO (DESCRICAO, DESCONTO, JUROS, BOLETO)
+VALUES ('CREDITO 1X', 2.25,0,0)
+
+automatizar o serviço de inserção de valores iguais
+INSERT INTO FORMAPAGPRAZOS (FORMAID, PARCELA, PRAZO)
+SELECT ID, 
+1 AS PARCELA, 
+0 AS PRAZO 
+FROM FORMAPAGAMENTO
+
+ja que os valores são iguais so copia-los
+
+CONECTAR TABELAS PELO SELECT, INSERINDO OS DADOSDE OUTRA NA NOSSA
+
+EXERCICIOS
+
+RESTAURAR O BANCO SOLUTEC
+
+PEGAR OS DADOS DA SOLUTEC E COLOCAR NA NOSSA
+PRODUTO (USUARIO =! CONVERSÃO AND EMPRESAID = 4 AND INATIVO = 0) E CLIENTES
+
+

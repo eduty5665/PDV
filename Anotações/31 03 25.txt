@@ -1,0 +1,44 @@
+TRATAMENTO DE ERRO
+
+try catch excpetion --> ele tenta o codigo, acaso der erro ele da uma mensagem
+facilita na hora da busca dos erros
+com a mensagem podemos ter uma base de onde esta o erro
+
+
+qualquer erro o sistema fecha o app
+
+PASSAGEM DE PARAMETRO
+
+aula de estrutura de dados
+passagem por valor ou por referencia
+utilizamos valor para nao alteração de valores
+e referencia como endereço de memoria, para podermos alterar valores
+
+--ByVal (por valor)
+quando apenas colocamos o parametro na função ela nao recebe atualização de valor
+ou seja se colocamos a variavel como vazia, mesmo que atribuimos algum valor a ela
+ela vai retornar vazia
+
+--ByRef (por referencia)
+passamos o endereço de memoria da variavel
+podendo assim editarmos ela com os valores que desejarmos
+nao ficando preso a valores fixos
+
+
+#-------------#--------------#---------#----------------#------------#-----------------#----------------------#------------#------------------#-------------#
+
+
+INPUTBOX
+
+Uma caixinha de pergunta para o usuario como se fosse uma mensage box
+mas o usuario pode digitar nela
+frase que ira aprecer pro usuario || Titulo, ao que se refere || Mensagem padrão caso usuario não digite nada
+
+OPTIONAL 
+voce declara uma variavel como optional, podendo ou noa chama-la
+mas em caso de não chamar deve colocar um valor padrão
+acaso o usuario nao digite nada ou voce não chame tal função/variavel, o valor padrão cobre
+
+
+
+

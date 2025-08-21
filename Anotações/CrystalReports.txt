@@ -1,0 +1,54 @@
+📊 O que é o Crystal Reports?
+Crystal Reports é um software da SAP usado para criação de relatórios personalizados, com base em dados de bancos de dados relacionais como SQL Server, Oracle, Firebird, MySQL e outros.
+É amplamente utilizado em sistemas Delphi, C#, .NET e VB.NET, especialmente em ERPs e sistemas administrativos.
+
+⚙️ Como funciona?
+Fluxo básico:
+-Conecta-se a um banco de dados
+-Seleciona tabelas, views ou stored procedures
+-Monta relatórios visualmente (drag-and-drop)
+-Aplica filtros, agrupamentos e fórmulas
+-Gera relatórios em formatos como PDF, Excel, HTML, etc.
+
+🔧 Principais funcionalidades:
+Função	Descrição
+📑 Geração de relatórios visuais	Layout profissional com cabeçalhos, tabelas, gráficos
+🧮 Cálculos e fórmulas	Possui linguagem de expressões própria (semelhante ao Excel)
+🔁 Agrupamento de dados	Por categorias, datas, faixas de valores
+📤 Exportação	PDF, Excel, Word, CSV, HTML
+🔍 Parâmetros de entrada	Permite filtros dinâmicos (Ex: por data, cliente, região)
+👨‍💻 Integração com código	Pode ser usado dentro de sistemas em C#, VB.NET, etc.
+
+🛠️ Como usar (passos básicos)
+-Criar o arquivo .rpt no Crystal Reports Designer
+-Conectar ao banco de dados (ODBC, ADO.NET, etc)
+-Escolher os campos/tabelas
+-Montar o layout
+-Salvar e integrar com sua aplicação
+
+📌 Formatos de exportação
+-PDF
+-Excel (.xls)
+-Word (.doc)
+-HTML
+-CSV
+-Texto puro
+
+📈 Vantagens
+Vantagem	Explicação
+🔗 Integração fácil	Com sistemas em .NET, Delphi, Java
+📐 Visual intuitivo	Criação via arrastar e soltar
+💼 Profissional	Amplamente usado em relatórios empresariais
+📄 Parâmetros e filtros	Interativos e dinâmicos
+🎯 Preciso	Controle total sobre o layout e dados
+
+❗ Limitações
+🔒 Versão completa é paga
+🔁 Pode ser pesado para grandes volumes de dados
+🤝 Dependência de compatibilidade com versão do Visual Studio
+📦 Requer redistribuição das Crystal Reports Runtimes no cliente
+
+✅ Quando usar?
+-Sistemas com relatórios complexos e bem formatados
+-ERPs que precisam exportar documentos como nota fiscal, faturas, relatórios financeiros
+-Situações onde é necessário filtro por parâmetros ou relatórios interativos

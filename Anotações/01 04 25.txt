@@ -1,0 +1,95 @@
+ISNUMERIC
+
+Verifica se o parametro dentro dos parenteses é numerico ou noão
+no nosso caso utilizamos a variavel codigo e preco, verificando se o texto, a string digitada pelo usuario é numerica ou nao
+
+FORÇAR CONVERSÃO
+
+-Cint, Cdate, Cdbl
+existe para cada tipo de dado uma função ctipodado, ou seja, converte tipo dado
+aonde ela pega o conteudo da string, o conteudo que o usuario digitou e força a transformação/conversão no tipo selecionado
+uso tanto em funções de validação como em funções de gravação de dados
+
+
+FUNÇÕES LAMBDA -- FUNÇÕES DAS LISTAS
+
+São funções que a propria lista oferece para a gnt poder manipular os dados
+Filtrar uma coleção de dados
+
+--select()
+função para selecionar algo
+aqui utilizamos ela da seguinte maneira
+select(function(p) p.Codigo)
+seleciona uma variavel p, nesta variavel armazenamos os todos os codigos, seguindo o exemplo
+mas esta função da uma ampla gama de uso
+
+--Function
+assim como uma função normal	
+
+--max
+traz o valor maximo de algo
+do nosso codigo ele traz o maior codigo
+
+--min
+traz o valor minimo de algo
+do nosso codigo ele traz o menor codigo
+
+
+
+-----#----------------#------------------#-------------------#-------------------------#----------------
+
+
+PUBLIC SHARED
+
+Criamos uma classe chamada CFG
+essa classe tem todas as funções que serão utilizadas por todo o programa
+para usarmos essas funções devemos declarar as funcções como 
+PUBLIC SHARED isso faz com que a função seja publica e compartilhavel
+sem a necessidade de instanciar a classe para utilizarmos as funções dela
+apenas coloque CFG.função
+assim podemos utilizar a função daquela classe
+
+serve tambem para instanciação de objeto
+como um objeto da main que sera utilizado para guardar o login do usuario
+este objeto sera utilizado em todo o programa
+então declaramos o mesmo como shared
+
+
+FORMATAÇÃO DE STRING
+
+sempre criando as funções na CFG pois podemos utilizar em outros lugares do codigo
+função formataCPF recebe um valor, que é a string cpf
+ele passa essa variavel para uma variavel local
+e trabalhamos com ela
+verificamos se é numerico, se for verificamos se tem 11 digitos
+acaso tenha 11 numeros, formatamos como cpf
+left --> pega os caracteres mais a esquerda, nome da variavel + qtd de caracteres
+mid --> pega os caracteres do meio, nome da variavel + posicao inicial + qtd de caracteres
+right --> pega os caracteres mais a direita, nome da variavel + qtd de caracteres
+
+--LEN()
+Conta os caracteres de uma string/cadeia de caracteres
+
+--IMMEDIATE WINDOW
+Tela do Debug usada para testes
+voce pega parte do codgio da função e testa pra er oq retorna 
+
+--REPLACE
+Retira determinado caractere da string
+por exemplo
+rvr = replace(vr, ".", "")
+retira todos os pontos da variavel vr e substituiu por nada
+
+--EXERCICIO--
+
+preco = custo + (custo * (margem/100))
+margem = ((preco - custo)/custo) * 100
+
+
+
+
+
+
+
+
+

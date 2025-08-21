@@ -1,0 +1,146 @@
+INNER JOIN - AULA66
+
+usado para fazer consultas
+aqui voce pode unir multiplas tabelas para 
+trazer informaçoes
+que estao separadas ou desconexas
+
+podemos fazer quantos inner joins quisermos
+isto é unir quantas tabelas for preciso
+
+podemos depois do inner join
+usar o where ou o order, ou os dois
+como se fosse uma query comum
+
+LEFT JOIN
+
+prioriza as atividades que estao a esquerda
+todo codigo que estiver a esquerda ele priorizara
+
+RIGHT JOIN
+
+ele prioriza todo o conjunto a direita
+mesma coisa do left join so inverte o lado
+priorizando os codigos a direita
+
+--EXERCICIOS
+
+--TRAZER NUMERO DA VENDA, DATAVENDA, NOME DO CLIENTE, DATA DE VENCIMENTO DO TITULO, 
+--COD E DESC DO PRODUTO QUE TA NA VENDA, QTDE E VALORUNI, FORMA DE PAGAMENTO
+--SEM WHERE
+
+---------------------------#----------------------------#----------------------------------#-------------------------#------------------
+
+GROUP BY - AULA 67
+
+usado nos inner joins quando queremos agregar certos campos
+por exemplo quando usamos funçoes de sum ou count que mechem com a estrutura
+do codigo, mexem com atributos/campos diferentes
+
+ --SEMPRE QUE USAR UM SUM, COUNT NUMA CONSULTA
+ --USAR O GROUP BY
+ --PORQUE QND USAMOS FUNÇÕES DO TIPO QUEREMOS AGRUPAR ALGUM DADO
+ --E SEM GROUP BY DARA ERRO
+ --O GROUP BY DEVE CONTER TODOS OS ATRIBUTOS, CAMPOS QUE FORAM LISTADOS NO INNER JOIN
+
+
+exemplo:
+ GROUP BY V.ID, C.NOME, P.CODIGO, P.DESCRICAO, FP.DESCRICAO, VI.QTDE, VI.VRUNITARIO, V.DATAPEDIDO, T.DATAVENCIMENTO
+usando todos os campos listados no inner join
+
+cuidar pela restriçoes
+cuidar com oq vc realmente quer trazer, e trazer so o basico
+sen o group by nao funciona corretamente
+
+--EXERCICIO AULA67
+
+--TRAZER DE CLIENTES, NOME, ENDEREÇO, TOTAL DE CONTATOS (COUNT)
+
+--FORMAS DE PAGAMENTO, * TOTAL DE PRAZOS QUE CADA FORMA DE PAGAMENTO TEM
+
+--SOMATORIA DE TODOS OS ITENS DA TABELA DE VENDAS
+--DESC, COD, QTDE E VRUNIT
+--TOT DE CADA ITEM 
+--CUSTO TOTAL DE CADA ITEM (CUSTO * QTDE)
+
+---------------------------------#---------------------------#---------------------------------------------#----------------------------------------------#---------------------------------
+
+AULA 68
+
+Clausulas para diferentes modos de consulta
+Podemos se utilizar de sub-consultas
+
+SELECT(SELECT...)
+
+  --PODENDO SER MAIS RAPIDO
+  --PORQUE ELE REALIZA A CONSULTA PRIMEIRO
+  --DEPOIS O JOIN
+
+Os subselects ou subconsultas são mais rapidas do que as consultas lisas no join
+porque realizando a subconsulta antes, ele vai pro join ja com o valor definido
+sendo assim torna mais agel
+
+ROUND
+
+Arredondamento
+voce pode selecionar uma coluna no proprio select e colocar para ele arredondar esta coluna
+por exemplo
+round(valor total, 2)
+ou select( round(select(...), 2))
+
+o numero dois pode ser trocado para quantas casa voce quer arredondar, 
+ou para quantas casas quer arredondar
+
+ISNULL
+
+acaso voce va fazer junções que precisem de valor para calcular
+é bom utilizar o isnull
+ele testa se o valor de determinado campo é nulo ou nao
+acaso for nulo, ele retornara com um valor padrao ja predefinido
+
+select(sum(isnull(qtde, 1) * vrunitario))
+
+ele verifica se o valor da quantidade é nulo
+e se for atribui 1
+sen recebe o valor e continua
+
+DISTINCT
+
+adiciona atras de um campo que deseja procurar de uma tabela
+mesmo que esse campo tenha infinitas linhas com o mesmo nome
+ele vai trazer na lista somente uma vez o nome
+
+DESC
+ordena pela ordem inversa
+descendente
+
+MAX
+traz o valor maximo de algum campo
+escolhido de alguma tabela
+
+TOP
+traz os primeiros registros de uma tabela
+dentro dos parenteses voce indica quantos registros quer trazer
+
+SELECT TOP(100) * FROM PRODUTO
+SELECT MAX(CODIGO) FROM PRODUTO
+SELECT DISTINCT (TIPO) FROM PRODUTO
+SELECT ISNULL(CUSTO, 0) FROM PRODUTO
+SELECT ROUND(CUSTO,2) FROM PRODUTO
+SELECT COUNT(ID) FROM PRODUTO
+
+HAVING
+
+Parecido com a clausula where
+mas serve para dados agrupados
+Toda vez que voce precisar filtrar dados que tenham group by
+use o having no lugar do where
+apos o gruoup by
+HAVING (SUM(VI.QTDE * VI.VRUNITARIO) > 100)
+
+SUBCONSULTA UTILIZANDO WHERE
+Ao inves de deixarmos os dados agrupados
+deixamos as consultas ocorrerem normalmente
+e usamos esta consulta como uma subconsulta
+e na nossa cunsulta principal usamos o where para filtragem
+pois ai os dados ja estao agrupados

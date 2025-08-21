@@ -1,0 +1,76 @@
+STYLES EM GERAL
+
+para se criar um style voce se utiliza da tag style
+abre e fecha a mesma
+dentro dela voce pode se utilizar de tags setters
+aonde voce pode setar/configurar oq quiser
+atraves do targettype voce define o tipo de objeto do qual esta configurando, seja uma label, uma grid, uma window, entre outras
+bem como as propiedades, como tamanho, cor, arredondamento
+e por ai vai
+
+WPF -- ENCERRADO
+
+   **PHOTOSHOP**
+
+Primeira Aula
+abrir a logo no sistema, desbloquear a imagem para poder mecher com ela, cadeado no lado direito do programa
+
+FERRAMENTAS DE SELEÇÃO 
+laço poligonal -- cria pontos em volta da imagem para pode escolher oq deseja selecionar
+
+
+laço magnetico -- vai passando o mouse aonde deseja selecionar, o proprio programa seleciona os pontos que deseja
+
+varinha -- vai clicando para selecionar, mais geral, generalizada
+
+varinha magica -- clica e seleciona o todo
+
+
+FERRAMENTA DE CORTE
+abre a seleção de corte, como nos celulares, aonde vc pega nos pontos extremos e vai puxando ate selecionar o que deseja e cortar do restante
+
+CONTA GOTAS
+Selecionador de cores, pega uma cor especifica que o usuario clicar
+
+REMOÇÃO DE MANCHAS
+pouco usada
+
+PINCEL
+seleção livre
+pintar qualquer canto
+
+CARIMBO
+sistema absorve a cor da onde vc passa o mouse
+
+DESFAZER ALGO
+
+BORRACHA
+magica -- tira toda cor que vc clicar, por alguma cor especifica que queira tirar do problema ou o plano de fundo
+plano de fundo -- tira todo plano de fundo que vc desejar
+normal/comum -- ela pega um certo tamanho, e aonde vc clicar apaga
+
+BALDE DE TINTA
+aplicar uma cor na imagem
+escolhe um cor na parte direita do sistema
+e após clicar aonde deseja e completa automaticamente com a cor desejada
+
+TRABALHANDO EM CAMADAS
+Na parte direita do sistema, existem as camadas
+vc pode criar e apagar qnts desejar, e ir trabalhando e configurando elas a gosto
+*opacidade
+*visao/olho da camada -- questao de visibilidade
+
+CAIXA DE TEXTO
+criar literalmente uma caixa de texto para vc escrever oq quiser, configurações padroes, fonte, size, decorations, aligns
+
+
+
+
+Segunda Aula
+Site da adobe bom para pegar as imagens
+adobe stock
+procurar a foto na adobe, nao utilizar de la pq é pago
+copiar a imagem na google imagens, mudar os selects para mais tamanhos
+dessa forma vc tera uma resolução melhor
+ao buscar a imagem olhar os tamanhos, qnt maior tamanho maior resolução, e procurar abrir a imagem em uma nova guia pq os tamanhos podem estar errados
+--baixar img

@@ -1,0 +1,50 @@
+FIREBIRD 2.5
+versao que smp utilizamos
+
+melhor que o sql
+ele é pora empresas maiores
+aonde trabalha em servidor
+
+baixar tres arquivos
+antigo pra qnd precisar mexer em sistemas velhos
+o executavel do firebird
+e o IBExpert, que é a IDE do Firebird
+
+salvar na pasta de banco de dados local, dps mnd pra rede
+.fdb terminaçao do firebird
+
+USAR SMP O ISO8859_1
+USAR SMP DIALECT 3
+
+acesso padrao
+SYSDBA
+MASTERKEY
+
+register database after creating
+sempre marcado assim ele deixa visivel na aba
+
+REGISTRO DE BD
+
+-- Local:
+voce faz um novo registro normalmente
+remote, localhost, tcp/ip, firebird2.5
+caminho da sua pasta
+apelido
+login e ISO8859_1
+Default_charset
+
+-- Remoto:
+preaticamente a mesma coisa acima
+unica diferença é o servidor, que sera da sizex ou IP do Servidor
+e o caminho da pasta
+o caminho da pasta é pelo caminho virtual x
+voce copia ele mas dps troca pelo g que seria o caminho real
+remote, sizexsrvm tcp/ip, firebird2.5
+caminho copiado do x, com g
+apelido
+login e ISO8859_1
+Default_charset
+
+
+dois modos de fazer registros muito utilizados, raramente criamos BDs do zero
+apenas registramos

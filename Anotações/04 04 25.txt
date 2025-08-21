@@ -1,0 +1,18 @@
+TEXT CHANGED
+
+Um escutador para texts
+ele vai captar toda mudança de text que acontecer no text
+a cada tecla digitada
+
+verifica se ha registros com a função count
+srcCliente.Source = objCliente.lstClientes.Where(Function(p) p.Nome.Contains(PesTxt.Text)).ToList
+
+procura o que esta sendo digitado (pestxt)
+tanto faz oq for
+e retorna qualquer nome que contenha em algum lugar da string
+oq esta sendo digitado
+
+== o cliente da lista, onde o nome contenha oq foi digitado na pesquisa
+retornando para lista
+
+exercicio realizado, criar listagem diferente, por cada atributo das diferentes telas 

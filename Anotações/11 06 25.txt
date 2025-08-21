@@ -1,0 +1,81 @@
+AULA 71 - FUNÇÃO SCALAR
+
+Semelhante a função function, pois tambem retorna um valor
+assim como toda function retorna valor, a scalar tambem retorna
+
+temos como criar campos/valores na tabela que são resultados de funções
+isso é uma função scalar
+
+é como se fosse uma modularização da programação
+cria-se função e depois edita atabela criando campos que recebem tal função
+na hora de selecionar, filtrar, so buscar os dados normais com o campo ja recebendo a função
+
+se parece com a procedure
+sempre tera cabeçalho para preencher com nome, data e tarefa/oq se trata
+depois a funcao
+recebendo valor, parametros
+declarando variaveis
+selects
+e retorno
+
+lembrar de na hora de chamar a função na parte computada do campo
+lembrar de chamar corretamente
+([dbo].[FUN_TOTAL_ITEM]([Id]))
+assim    nome func       parametros 
+
+uso variado e pratico
+
+PARA ALTERAR A FUNÇÃO
+voce necessita retirar a função, a chamada da funcao da tabela/campo
+para depois edita-la e assim poder depois de editar ela
+voce chama ela novamnete no campo
+sen fizer isso ele restringe a atualização
+
+--EXERCICIO
+--FAZER UMA FUNCAO, NA TABELA VENDA, CAMPO TOTAL VENDA == SOMATORIO DOS ITENS
+
+-----------------------#----------------------------#-------------------------------#------------------------------#--------------------
+
+
+AULA 72 - TRIGGER
+
+SCALAR NÁO É UMA BOA PRÁTICA
+Antigamente se usava muito os campos calculados, as scalar
+mas atualmente percebeu-se que ela perdem muito em performance
+quando se trata de poucas linhas ela compensa e é rapida
+mas com muitos dados, muitos campos ela fica lenta e demora pra carregar os dados ao usuario
+
+trocando para as triggers
+
+triggers diretamente relacionadas a tabelas
+nas pastas dela mesmo
+
+Trgigers são gatilhos, elas funcionam apos alguma ação
+por exemplo um insert: AFTER INSERT
+deu um insert, a trigger é acionada
+
+INSERTED --> tabela aonde o dado esta sendo inserido
+referindo a esta tabela
+insert into clientes
+select * from inserted
+ele bnusca tudo da tabela clientes
+
+*3 GATILHOS*
+toda tabela tem tres gatilhos
+-insert
+-update
+-delete
+
+after - depois || before - antes
+voce decide qual comando combina melhor
+
+o codigo sera o mesmo, so vai mudar o evento
+
+TRIGGERS NO LUGAR DA SCALAR
+
+
+--EXERCICIO
+
+--CRIAR TRIGGERS PARA OS DOIS CAMPOS CALCULADOS
+--REMOVER AS FUNÇÕES DOS CAMPOS E NÃO DO BANCO
+

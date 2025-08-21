@@ -1,0 +1,20 @@
+JWRURAL - Tela Cadastro
+
+CHAVE DE REGISTRO - WINDOWS
+
+São como cookies do chrome
+ele salva infos que voce utiliza com maior frequencia
+por exemplo infos de login
+
+Executar do windows
+comando regedit
+abrir a lista de chaves que o windows possui salvo
+parecido com o explorer
+vamos abrir a pasta current user, software, vb and vba program settings
+dentro desta pasta criar a sua pasta e salvar as chaves registros
+
+Exemplo - Chave de Registro
+        SaveSetting("Treinamento", "Acesso", UCase(Nometxt.Text), Senhatxt.Password)
+
+
+REALIZADO LOGIN - 5:04

@@ -1,0 +1,66 @@
+AULA 77 - RESOLUCAO E EXERCICIO
+
+--CTX é a variavel utilizada para trazer os dados das tabelas SizexEntities
+--PASSOU é a variavel utilizada para verificar se é a primeira vez que se abre a tela
+
+IQUERYABLE
+voce utiliza esse tipo de dado para armazenar a lista nele
+é como uma lista dos dados
+serve pra voce colocar todos os dados do banco de dados nela
+o diferencial da lista é que ela so executa, a pesquisa ou filtragem
+quando voce der um ToList em outra parte do codigo
+
+SIZEX ENTITIES
+é o tipo de dado que representa as tabelas
+ele incorpora todas as tabelas dentro de uma variavel so
+desta maneira voce pode utiliza-la para chamar qualquer dado de qualquer tabela
+
+SALVAMENTO COMO FICOU
+a gnt salva tudo nos objetos como estava
+apos isso a gnt nao adiciona mais na lista
+e sim direto na tabela, com a variavel ctx
+
+voce adiciona o obj na ctx antes de salvar no obj
+ctx.ClienteContatos.Add(objContato)
+
+apos isso salva todos os dados no obj
+
+e apos isso da um save changes na ctx, no banco
+ ctx.SaveChanges()
+
+voce adicionar o obj antes de salva-lo é como se voce estivesse reservando um espaço para aquela variavel
+ai quando ela chega o espaço ja esta reservado, so atualiza os dados de nulo para oq for recebido
+*aula de estrutura de dados*
+
+ATUALIZAÇÃO DOS DADOS NAS TELAS
+Função atualiza
+essa função sempre atualiza os dados na tela
+criada uma vez utilizada n vezes no codigo, ate mesmo no loaded
+
+aqui voce coloca os valores do obj nos campos txt
+
+para levar os dados a tela continua do mesmo jeito
+pela colletion view source
+srcCliente.Source = ctx.Cliente.OrderBy(Function(p) p.Nome).ToList
+srcContatos.Source = ctx.ClienteContatos.Where(Function(p) p.ClienteId = objCliente.Id)
+.OrderBy(Function(p) p.TipoContato).ToList
+
+aqui voce chama a source, que esta nula
+e add os dados nela
+com o ctx falicita, pois tu pode ordenar, selecionar ou filtrar os dados
+                                order by    select           where
+
+
+==============================================================================================================
+---------------------------------------------EXERCICIOS-------------------------------------------------------
+==============================================================================================================
+
+REALIZAR O SALVAMENTO E A PESQUISA DOS DADOS DAS OUTRAS NO BANCO DE DADOS
+MUDAR PARA O BANCO DE DADOS
+
+
+
+
+
+
+

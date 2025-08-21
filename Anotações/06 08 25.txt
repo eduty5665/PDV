@@ -1,0 +1,174 @@
+CREATE TABLES
+
+para criar tabelas mesmo esquema de smp
+botao direito create table
+diferencas --> chave primaria, criada no constraints deve ser not null smp
+sen não aceita, e toda vez que criar uma chave primaria utilizar
+#PK_GEN# na descrição, comunicação com o entity para falar que é identity, 
+ou seja, auto incremento
+
+mesmo comunicando com o entity
+precisa setar no campo que ele é identity
+duplo clique no campo, autoincrement, 
+generator, create generator
+trigger, create trigger
+--so commitar que ta tudo certo, precisa mudar nd nos arquivos--
+
+ENTITY
+em relação a outros SGBDs o FireBird não possui a ferramenta entity
+parecido com o Oracle em relação a isso
+mas em controversa, o IBExpert a IDE que estamos utilizando
+ele criou um generator, como se fosse um contador, que possibilita atraves de um trigger
+a gnt criar o entity
+*gambiarra*
+
+CRIACAO DE CAMPOS
+tabela, field, new field
+dar o nome qlq, setar nulo ou nao, primary key ou nao
+*raw datatype* tipo do campo(int, varchar, date)
+
+CHAVE ESTRANGEIRA
+famosa FK
+criar um campo integer, mais nada
+nos constraints, foreign key, new foreign key
+ai coloca os dados, qual campo vai virar fk
+relaciona qual tabela
+relaciona com qual campo da tabela tal
+
+INSERT INTO
+os inserts são realizados na aba DATA da tabela
+assim como eram os inserts la no SQL
+sempre de um commit a cada mudança
+
+DDL
+script da tabela, o codigo SQL
+
+EXECUTAR CONSULTAS/SCRIPTS
+-SQL EDITOR
+	so executa um comando por vez
+	execute = f9
+	aba edit-->cria os codigos sql
+	aba results-->apresenta o resultado das consultas sql
+	as mudanças realizadas, como updates e creates, ficam salvas na sua conexão
+	se acaso alguem abrir outra conexão não vai ver as mudanças realizadas como vc
+	ate vc dar um commit, salvando permanentemente no bd, persistindo
+
+	querys, arquivos editaveis, aonde estão os codigos, os arquivos sql
+	tem uma lista na direita que voce pode criar qnts necessitar
+
+-SCRIPT EXECUTIVE
+	scripts para clientes
+	scripts que não mostram resultados
+	bom para os analistas configurarem sistemas
+	levam o script e so rodam
+	ele executa todos os comandos de uma vez
+
+dia a dia = SQL EDITOR
+
+
+DICAS
+as funções/o codigo é o mesmo em quase todos os SGBDs
+
+-Função IsNull no SQLSERVEr = Função COALESCE no FireBird
+	https://www.dio.me/articles/tratamento-de-campo-nulo-firebird
+	A função COALESCE em SQL é usada para retornar o primeiro valor não nulo em uma lista de expressões. 
+	Ela é especialmente útil quando você deseja obter o primeiro valor válido de uma série de colunas ou expressões,
+	em vez de simplesmente retornar o primeiro valor encontrado,
+	como aconteceria com a função IFNULL ou ISNULL (dependendo do banco de dados que você está usando).
+
+	SELECT COALESCE(NomeAlternativo, Nome) AS NomeSelecionado, Descricao FROM Produtos;
+	Nesse exemplo, se "NomeAlternativo" não for nulo para um determinado produto, esse valor será retornado como "NomeSelecionado".
+	Caso contrário, o "Nome" principal será retornado.
+
+	usar bastante com valores numericos
+	retornar 0 caso seja nulo
+
+-Função Top no SQLServer = Função First no FireBird
+	https://razorsql.com/articles/firebird_select_top_syntax.html
+	A sintaxe "select top" é uma sintaxe usada por certos bancos de dados para limitar as linhas retornadas às primeiras N linhas de uma consulta.
+	O Firebird tem uma maneira de selecionar as N primeiras linhas de uma consulta SQL,
+	mas a sintaxe não usa a palavra-chave top. Em vez disso, a palavra-chave "first" deve ser usada.
+
+	SELECT FIRST 10 * FROM sua_tabela;
+	Este comando irá retornar apenas as 10 primeiras linhas da tabela sua_tabela.
+
+*Similaridade entre os SGBDs | Os outros comandos são iguais*
+
+
+
+CONECTAR UM PROJETO COM FIREBIRD
+criar um projeto em Visual Studio
+instalar as dependencias do entity
+-Install-Package EntityFramework -Version 6.1.3
+-Install-Package EntityFramework.Firebird -Version 4.5.0
+criar a classe que ira receber o banco
+data entity, setar as infos do firebird
+
+para codar é da mesma forma
+nada muda, o entity recebe o .net
+dps a parte do banco, pouco interessa
+
+
+ERRO DE CONEXÃO FIREBIRD
+O erro mais comum ele acontece ao abrir o projeto
+esse erro consiste em ter duas chaves iguais copiadas no mesmo arquivo
+na hora de executar, ou salvar sla, o firebird duplicou por algum motivo essa chave
+c:windows/debug/microsoft.net/framework/versao_mais_recente/config/machine.config
+esse é o arquivo --> machine.config
+arquivo na references, copiar o arquivo para area de trabalho, abrir com bloco de notas
+pesquisar por invariant --> ele vai levar direto pra chave FireBird
+apagar duplicata
+copiar o arquivo de volta as references
+
+
+==================================================================================================
+======================================CRISTAL REPORTS=============================================
+==================================================================================================
+
+AULA 80 - CRYSTAL REPORTS
+
+é um software da SAP usado para criação de relatórios personalizados,
+com base em dados de bancos de dados relacionais como 
+SQL Server, Oracle, Firebird, MySQL e outros.
+
+Tudo oq envolve impressão
+ferramenta geradora de relatorios
+ferramenta de terceiro
+
+VISUAL STUDIO
+add, adicionar as referencias no projeto para poder utilizar
+tres referencias que vamos utilizar:
+	--engine
+	--reportsource
+	--shared
+
+RELATORIO
+cada relatorio criado é um rpt que fica na pasta rpt
+mas para que o sistema possa ler esses arquivos rpts
+ele precisa de uma tela especifica
+ReportWin nome do arquivo, so copiar pro projeto, na pasta relatorios
+
+CONEXÃO COM BANCO DE DADOS
+pegando a tela do crystalreport
+vamos destrinchar ela
+
+abre a class
+tem dois objs, 
+o localizacao pega a localizacao aonde o crystal criou o report
+a do parametro cria uma lista com os parametros de entrada pro BD
+
+quando a tela abrir, der o loaded
+ele vai criar objs para manipular o report no codigo
+vai criar a conexão com o BD
+	primeiro passar o endereço do server do banco
+	e o nome do banco
+
+	segundo criar o obj conn
+	pegar o usuario e a senha
+	mandar pro crystal, pra ele adentrar no codigo
+
+	depois que ele conseguiu logar no BD
+	e pegar as infos
+
+ele carrega as informações num rpt
+o abrindo em outra tela

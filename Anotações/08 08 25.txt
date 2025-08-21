@@ -1,0 +1,205 @@
+ULTIMO TREINAMENTO
+GIT HUB
+
+AULA 01 - O QUE É O GIT
+
+Git --> software de versionamento de codigo
+independente do git hub, open source
+baixou tem as ferramentas pra utilizar ele
+ele vem sem interface, apenas no codificação no terminal/console
+
+o git não detalha arquivos que não são textos
+como pdfs(arquivos binarios), docx(binario), audio, video, imagem
+arquivos de texto --> codigos da programação, ele exibe todas as alterações
+
+Voce pode versionar diretamente no servidor
+baixar uma versão no servidor, e essa versão controla o versionamento
+como se fosse um git hub, mas no seu servidor
+
+AULA 02 - CRIAÇÃO DE USUARIO GIT HUB
+
+contratado pela empresa
+recebe um email, ex: eduardo@sizex.com.br
+utilizará deste email para criar a conta git hub
+
+qnd cria a conta, voce é adicionado ao time da sizex no git hub
+oq te da acesso a todos os projetos ja existentes
+
+organization --> voce ve o time, ve os projetos
+clicando num projeto, voce pode ver os commits ja realizados nele
+todo o historico, podendo ver exatamente oq foi modificado
+
+GIT HUB DESKTOP --> 
+instalar...
+ao baixar logar com a conta sizex
+options -- configuração
+	-git, preencher nome e email corretamente
+	-appearance, aparencia do git
+	-prompts, deixar como esta... todos marcados
+	-advanced, sempre perguntar se quer realmente commitar as mudanças
+	background updates, marcado
+
+AULA 03 - CLONAR REPOSITORIO
+
+Projeto ja existente, ja esta hospedado no git
+mexer em determinado repositorio
+voce procura o repositorio na aba ao lado, acaso vc nao tenha baixado ele ainda
+sera preciso clona-lo, para isso, clicar no add, clone repository
+github.com, pesquisar pelo repositorio
+clonar o repositorio na pasta --> G:SizexFontes/sizex-git/nomedorep
+tem que estar exatamente assim, igualzinho
+
+FETCH --> Buscar alterações no git, desde de o ultimo Fetch
+acaso tenha alterações, dar o comando Pull
+PULL --> Traz as alterações do git hub pro local
+
+Abrir o arquivo no Explorer
+Show in Explorer
+Abrir o projeto SLN
+
+Baixar DLLs dos projetos
+
+AULA 04 - AJUSTES ANTES SUBIR O GITHUB (COMMITAR)
+
+Todos os arquivos referentes ao projeto devem estar dentro da pasta do projeto
+No exemplo da Casa Verde, tinha a pasta packages que estava fora do escopo,
+da pasta do projeto, então ele so jogou pra dentro do projeto e torceu pra funcionar kdkd
+acaso não funcionasse precisaria mudar o arquivo .vbproj do projeto
+abrir ele com o bloco de notas, pesquisa o nome da pasta que deu erro
+e referencia a pasta corretamente, ou seja, muda o caminho dela pro atual
+
+AULA 05 - ADICIONAR PROJETO AO GITHUB
+
+PDV --> tem pdv-nomedolugar
+Projeto --> nomedolugar
+
+Clicar no ADD novamente
+create a repository
+nome, descripction, local (endereço da pasta: git), 
+sem readme, gitignore =  VisualStudio (arquivos build que podem ser ignorados),
+license = none
+
+Publish Repository
+nome, description
+keep this code private (sempre marcado)
+organization --> sizex-sistemas
+depois so publicar
+
+São duas pastas, a do projeto que voce editou
+a do repositorio criado no git, pasta criada acima
+.git --> pasta principal desse projeto 
+
+Para commitar as mudanças, copiar todas as pastas e arquivos da pasta do projeto
+para a pasta do repositorio
+o git vai reconhecer os arquivos
+dps so comittar
+nome como um resumo doq foi feito
+
+conceito diferente contra gitignore
+a pasta packages com os arquivos do Banco de Dados é essencial
+e essa pasta não esta sendo reconhecida por conta do ignore
+antigamente--
+pasta packages antigamente era criada automaticamente
+com o nugget (package manage console) gerador dos packages
+mas a microsoft retirou a integração do codigo com o nugget, ou seja, não baixa mais automatico
+atualmente--
+precisamos procurar a packages no git ignore e retirar ela de la,
+para que o git possa reconhece-la
+podemos retirar ela, ou comenta-la
+mas dps de fazer isso, o git ja reconhece ela
+
+FOCAR NO ERRO DO OUTRO VIDEO
+buscar verificar as references das DLLs
+
+
+==============================================================================================================
+=============================================TROCAR CONEXÃO DO BD=============================================
+==============================================================================================================
+
+AULA UNICA
+Trocando conexão de um banco, de SQLServer, SQLite ou FireBird
+consiste em trocar a conexão do banco local para o banco remoto(servidor)
+
+SQL PDV --> para os PDVs FireBird
+SQL ERP --> Banco de Dados SQL
+
+SE NÃO SOUBER O CAMINHO DO BANCO
+BUSCAR O CAMINHO DO BANCO NO SERVIDOR (X:)
+DPS MUDAR O X POR G NO REGEDIT
+
+--FIREBIRD--
+trabalhando com projeto ANA BANANA
+banco FireBird
+clonar repositorio
+pull para ver se tem alterações
+abrir o projeto
+
+o codigo da sizex ja troca em tempo de execução
+assim que voce executa, ele troca o banco local para o do servidor
+ele troca as strings de conexãos automatico
+
+--verificar wdAcesso
+	ela é a tela que o usuario usa para logar
+	degub no xaml dela
+	atraves dela é trocado as strings
+
+PRIMEIRO MODO
+
+verificar tbm editor de registros do windows (regedit)
+caminho:
+hkey_current_user, software, vb and vba program settings,
+sizexpdv(pq é pdv, verificar pasta compativel), bdados
+voce vai ver 3 arquivos: padrao, caminho e servidor
+mudar o caminho, pegar o caminho da pasta X da rede
+so mudar o X para G
+
+SEGUNDO MODO
+
+apagar as chaves do editor de registro do windows
+apagando as chaves, o programa vai chamar a wdValidação
+na wdValidação ele vai pedir o dados para o analista que estiver atendendo
+instalando colocar esses dados do banco de dados
+caminho, servidor
+chave de liberação(cd programa tem o seu), caixa
+dps salvar
+
+
+--SQL SERVER--
+trabalhando com projeto STOK FRIOS
+banco SQL SERVER
+clonar repositorio
+pull para ver se tem alterações
+abrir o projeto
+
+MODO
+
+verificar editor de registros do windows (regedit)
+caminho:
+hkey_current_user, software, vb and vba program settings,
+sizexerp, bdados
+voce vai ver 5 arquivos: padrao, nomebanco, nomeservidor, senhabanco e usuariobanco
+mudar o servidor para o servidor da sizex
+la ja tem os bancos SQL, so mudar o nome do banco para oq for
+no caso STOKFRIOS
+apagar as chaves de senhabanco e usuario banco
+executar o codigo, vai pedir a wdValidação
+la a gnt seta, configura o usuario e a senha
+ai ele salva no regedit, e ai ja ta tudo certo
+
+
+--SQLITE--
+trabalhando com projeto ELETRICA PAULISTA
+banco SQLITE
+clonar repositorio
+pull para ver se tem alterações
+abrir o projeto
+
+MODO
+
+verificar editor de registros do windows (regedit)
+caminho:
+hkey_current_user, software, vb and vba program settings,
+sizexpdv(pq é pdv, verificar pasta compativel), bdados
+voce vai ver 3 arquivos: padrao, caminho e servidor
+mudar o caminho, pegar o caminho da pasta X da rede
+so mudar o X para G

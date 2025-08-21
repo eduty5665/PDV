@@ -1,0 +1,2 @@
+Key Down --> evento da window em que tudo que passa por ela é registrado, ou seja, se necessito que o usuario clique em uma tecla especifica é este evento que vai ter o listener, que vai escutar o teclado para captar a tecla
+

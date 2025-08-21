@@ -1,0 +1,72 @@
+Aula 1 - BANCO DE DADOS
+
+é um repositorio que cria tabelas para armazenamento de dados
+de forma organizada e relacionada
+
+SQLite --> sistemas menores, pequenos, individuais
+aonde so tem um pc que usa
+
+Firebird --> sistemas medio porte, que algumas maquinas utilizam estes sistema
+
+sql server --> sistemas grandes, aonde muitas maquinas vao acessar estes dados
+
+C  R  U  D
+r  e  p  e
+e  a  d  l
+a  d  a  e
+t     t  t
+e     e  e
+
+criar --> insert ou create
+ler --> select
+atualizar --> alter ou update
+deletar --> delete
+
+---------------------------------------------------------------------------------------
+
+Aula 2
+INSTALAÇÃO
+
+1º Servidor --> como se fosse o codigo puro
+2º IDE Manegemment Studio --> uma ide para trabalhar com o codigo SQL
+
+----------------------------------------------------------------------------------------
+
+Aula 3
+CONFIG PADRÃO DA IDE
+
+Contas de ACesso
+aba security --> logins --> criar login de ADMIN
+
+Log --> arquivo que guarda todos os comandos ja inseridos no BD
+acaso perca o BD so executar o log que ele ira recria-lo novamente
+
+.sql --> arquivo do SQL mesmo
+
+criar bd -> botão direito no databse/bancodados
+novo database/bd e ai criar com as configs padrão, sempre salvando log e sql juntos
+
+BackUp --> arquivo BAK
+so restaurar o arquivo que volta tudo
+para criar... clique no bd, tasks e dps backup
+dps so criar susu
+
+restaurar
+tasks, restaure... device e escolhe
+botao direito em database/bd tbm segue o msm caminho
+não salvar em diretorio padrao... clicar em relocate e colocar na pasta que queira
+
+sempre salvar nas pastas que vc escolher
+porque assim sabera aonde ta salvo
+
+------------------------------------------------------------------------------------------
+
+Aula 4
+CREATE TABLE
+
+duas formas de criar tabelas
+codigo==comandos e design, pelo auxiliar da ide
+
+sempre criar um ID como PK chave primaria
+outros campos ficam livres para edição, apenas a PK ou seja o ID
+fica a cargo da IDE tratar

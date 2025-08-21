@@ -1,0 +1,115 @@
+CRYSTAL REPORTS
+
+AULA 81 - FONTE DADOS
+
+rpt o arquivo de relatorio
+primeira coisa apontar a fonte de dados
+existem n maneiras de pegar esse arquivo, n fonte de dados
+(ler no doc do crystal as ferramentas que ele trabalha para fonte de dados)
+
+-diretamente no banco de dados SQL SERVER
+	--Tabelas
+		acessar diretamente a tabela do BD, somente qnd tudo ja estiver filtrado
+		raramente usado, é um tanto quanto dificil trazer os dados da forma que queremos
+		por exemplo, se acaso tiver que filtrar, ja não é vantajoso,
+		porque tem que filtrar direto no Crystal, isso o deixa lento
+		apenas o SQL SERVER pode utilizar este metodo, tem drive direto
+
+	--Tabelas Temporarias
+		quando precisamos de iteração do usuario na tela
+		lembrar do exemplo de add items numa impressao de etiqueta
+		toda vez que imprimir, ele apaga os dados da tabela
+		e vai inserindo somente oq o usuario selecionar
+		depois ele puxa a tabela inteira pra impressão, como o de cima
+
+	--Procedure
+		quando se trata de SQL SERVER mais recomendado
+		criar uma store procedure com tudo oq precisar
+		penar no SQL, pensar em todos os filtros necessarios
+
+
+-diretamente no projeto, sem mexer no BD diretamente SQLite FIREBIRD
+	--DataSet
+		repositorio de dados virtuais, diretamente no projeto
+		criar data tables, estruturas virtuais
+		funcional em tempo de execução, salvos em memoria
+
+		pelo que eu entendi voce salva as infos duas vzs
+		uma no banco outra na data table
+		assim voce persiste no bd os dados
+		e traz pro data table so oq precisa
+		
+
+AULA 82 - RPT
+
+Passo a Passo
+como gerar os relatorios
+
+primeiro preparar os dados
+ir no sql com oq pediram
+realizar uma procedure com select e where(filtros)
+
+segundo criar arquivo rpt
+na pasta rpt, criar um novo arquivo
+arquivo padrao e  utilizando assistente
+vai pra cima, marcha
+depois vai pedir a conexao:
+	caso ja tenha, buscar em minhas conexoes	
+	caso nao tenha, criar nova, ai tem que pegar os dados no sql
+
+depois disso ele ja cria o RPT com o basico
+se acaso vc definiu algum parametro, ele ja o cria tbm
+
+AULA 83 - ESTRUTURA DO RPT
+
+-DataBase Fields
+	aonde fica salvo a conexão feita, a tabela/procedure
+
+-Formula Fields
+	podemos criar campos/variaveis para manipularmos os dados vindos do banco
+	por exemplo um valor tot, aonde pegamos qtde e vrunit do BD e fazemos o calculo
+
+-Parameter Fields
+	aonde podemos criar parametros de comparação para mandar pro bd
+	ou a conexao com o bd ja traz esses parametros
+
+-Group Name Fields
+	podemos criar grupos no relatorio
+	sla agrupar pela cidade por exemplo
+	traz a cidade e agrupa todos os clientes com a mesma cidade
+
+-Running Total Fields
+	totalizadores
+	somar ou totalizar algum grupo, ou formula, por ai vai
+
+-Special Fields
+	campos proprios do crystal report
+
+-Unbound Fields
+	campos de conversão de dados do crystal report
+
+
+IMPRESSOES A4
+crystal report --> design --> page setup
+fazer uma configuração especifica para a pagina
+sem impressora (pode pegar alguma config indesejada, ett deixar sem)
+e o padrao de medida A4, so isso
+dar ok e marcha
+
+SESSÕES DA PAGINA
+
+cabeçalho do relatorio --> so se apresenta na primeira page, (estatico, executa uma vez so)
+cabeçalho da pagina --> aparece em todas as paginas, qnts tiver (estatico, executa uma vez so)
+detalhes --> dados dinamicos, ou seja, ele executa n vezes conforme qtde de dados do BD
+rodape do relatorio --> so se apresenta na primeira page, (estatico, executa uma vez so)
+rodape da page --> aparece em todas as paginas, qnts tiver (estatico, executa uma vez so)
+
+resumo --> cabeçalho relatorio: so primeira pagina; cabeçalho page: todas as paginas, mas so um por pagina;
+detalhes: um dado abaixo do outro
+
+MAIN REPORT PREVIEW
+ele traz uma previsão de como vai ficar o relatorio
+
+DESENHANDO O RELATORIO DE CLIENTES
+grupos...
+focar na criação de grupos, pegar mais isso

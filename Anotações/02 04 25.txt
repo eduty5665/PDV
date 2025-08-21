@@ -1,0 +1,30 @@
+MATH
+
+--abs
+traz o valor absoluto do numero
+independente de negativo ou positivo
+ele retorna o valor absoluto
+
+--Ceiling
+Arredonda deferentes decimais
+
+--Round(vr, 2)
+arredondamento
+primeiro a variavel a ser arredondada
+depois a quantidade de casas para arredondamento
+c = 20,845
+m = 14,58
+p = 23,884201
+ele arredondou todos para 2 casas
+
+--EXERCICIO--
+
+altura 600
+largura 800
+imagem --> 520height / 800width
+cores: 
+#547a7d 
+#c5cd39 
+#2e494b 
+#e5e8b6
+#ffffff 

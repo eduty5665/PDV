@@ -1,0 +1,26 @@
+MAIN WINDOW --> menu inicial
+Comandos nos botoes (feitos com Labels), vc divide a tela e cria um menu aonde quiser, em cima, em baixo, tanto faz
+a respeito dos comandos, mouseleftbuttondown pressionar o botao da equerda uma vez
+nessa função vc pode passar/navegar duma tela a outra
+
+a respeito dos botoes, buttons mesmo
+ja vem com a função click
+aonde voce pode colocar nela, um close para fecharas janelas, ou qualquer outro para navegar
+
+USER CONTROL --> outra forma de telas
+windows são soberanas voce usa ela quando quer sobrepor qualquer outra
+sempre puxar elas pelo dialog sen ficam soltas/perdidas pelos campos
+
+user controls, dando um significado ao nome é quando o usuario tem autoridade sobre as telas, ele pode navegar entre as telas ao mesmo tempo, sem ficar 'preso' em uma aba
+
+jogar user control dentro de um content
+fragmento de tela, usavel em multiplos casos
+
+Exercicio02 --
+	Cadastro Automovel -- Data Cadastro -- Botao X
+	Placa Descrição Combustivel UltimoKM
+	ValorCompra DataCompra TipoCompra
+	DataGrid -- Com as Infos
+	Data Km Litros ValorTotal
+	Salvar Excluir
+

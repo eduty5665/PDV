@@ -1,0 +1,37 @@
+tela de veiculos ficou bem parecida com a minha
+
+CHAMADA USERCONTROL
+Private Sub VeiculosMnu_MouseLeftButtonDown(sender As Object, e As MouseButtonEventArgs) Handles VeiculosMnu.MouseLeftButtonDown
+        Dim uc As New ucCadAutomovel
+        Dim tb As New TabItem
+        tb.Content = uc
+        tb.Header = "Veículos"
+        Menutb.Items.Add(tb)
+End Sub
+
+
+simplesmente abri uma tabcontrol/um menu de paginas aonde voce deseja colocar a pagina, a usercontrol em questão
+voce cahma uma função privada da classe 
+dando ao objeto uc a usercontrol criada
+dando ao objeto tb uma nova tabitem, ou seja uma nova guia do menu
+em seguida vc diz ao sistema que oq vc deseja atribuir ao content, o que vai ter no no espaço que você selecionou, na grid que vc esta utilizando. no nosso caso pegamos o objeto ja com a user control e jogamos na grid
+o header é simplesmente para dar um nome a aba
+na ultima linha chamamos a tabcontrol criada no wpf pelo nome dela, ou seja, Menutb, adicionamos a ela os items do objeto tb que no caso seria o content do tb, que ja tinhamos configurado para ser a nossa user control
+
+CT TEXT BOX
+WPFs criados pela SIZEX para facilitar a criação de novas telas, campos com formatação numerica, de borda e layout, e de tabindex, oq facilita tudo, simplesmente colocamos eles na ordem e o tabindex ja vem configurado
+
+ESTILOS
+Podemos criar um documento no proprio codigo/projeto chamado de resource dictionary, no caso um recurso de dicionario, algo que vc traz como dicionario ao seu codigo
+funciona como um import de css ou javascript
+vc coda os styles desejaveis dentro deste documento e depois chama eles no codigo atraveis de nome/classes
+
+<Color x:Key="bg-cor-rodape">#c5cd39</Color>
+cria como se fosse uma variavel css, aonde podemos utilizar apenas dentro desta pasta, se tentarmos adicionar ao wpf ira ocorrer um erro, para tal usamos a opção abaixo
+
+
+<SolidColorBrush x:Key="cor-rodape" Color="{DynamicResource bg-cor-rodape}"/>
+
+aqui utilizamos o solid color brush, os componentes do wpf so aceitam tal opçção, seja qual componente for, deve-se colocar entre chaves o dynamicresource e o nome key da color.
+aqui podemos referenciar as cores criadas acima, usa-las como variaveis, ao inves de colocar codigos rgbs
+

@@ -1,0 +1,45 @@
+COLLECTION VIEW SOURCE
+Como se fosse uma variavel que possibilita voce
+utilizar/chamar uma classe diferente na grid
+a grid em si so aceita o view source, mas se voce adicionar ele, 
+dentro dele voce pode chamar qualquer classe
+
+voce declara essa variavel n comeco do codigo nos resources do codigo
+depois voce chama ela na grid desejada, por intermedio do
+ITEM SOURCE
+
+binding tudo oq é ligação
+Binding="{Binding Observacao} dentro da declaração da grid
+
+isso é toda preparação da tela para recebimento dos dados
+ não ha programação em si
+
+
+Me --> variavel que referencia a propria tela, a si mesmo
+
+EXIBIR
+criar uma variavel dim para a classe
+srcContatos onde voce diz que ela é da classe CollectionViewSource
+
+Dim srcContatos As CollectionViewSource
+
+nesta variavel voce vai receber sempre um tipo de dado collection view source
+para tal voce deve forçar o tipo pelo metodo CType
+dps so procurar o resource de window que voce deseja
+neste caso ClienteContatosViewSource
+assim ele ja traz pra variavel
+
+apos declarar a variavel deve popular ela
+.Source na variavel para trazer a lista de contatos
+objCliente.Contatos.ToList
+
+
+
+
+
+
+
+
+
+
+

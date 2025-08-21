@@ -1,0 +1,40 @@
+AULA 78 - LAMBDA GROUP BY
+
+Criar uma grid no cadastro de clientes para que o cliente possa verificar
+todos os produtos ja comprados, incluindo
+nome prod, qtde e valor compra
+
+como eu quero trazer todos os produto
+pode ser que o cliente tenha comprado o mesmo produto em diferentes compras/vendas na nossa visao
+
+então eu posso fazer a consulta de tres maneiras para add o group by
+e dessa maneira trazer o produto somente uma vez... agrupando quantidade e valores de diferentes vendas
+
+- fazendo uma procedure e trazendo pronto do banco
+jeito mais rapido
+
+- fazer uma função lambda mais complexa, que traga todos os dados
+menos rapido que a de cima mas aceitavel
+
+- fazer uma lista com todos os dados, depois percorrer essa lista trazendo so os que vc deseja em outra lista
+muito demorado
+
+*Função Lambda*
+
+ ProdCompradoDataGrid1.ItemsSource = ctx.VendaItens.Where(Function(p) p.Venda.ClienteId = objCliente.Id) _
+                    .GroupBy(Function(p) New With {p.Produto.Descricao}) _
+                    .Select(Function(p) New With {.Produto = p.Key.Descricao, _
+                                                  .qtde = p.Sum(Function(d) d.Qtde), _
+                                                  .Total = p.Sum(Function(d) d.TotItem)}).ToList
+
+
+
+
+
+
+COISAS A ARRUMAR
+- arrumar os contatos clientes, salvar e aparecer com o duplo clique
+- arrumar a venda, salvamento
+- arrumar o baixar titulo
+
+

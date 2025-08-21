@@ -1,0 +1,133 @@
+POO - Programação Orientada a Objetos
+
+Programação em si
+codar
+
+conceito/paradigma de programação
+
+Classe --> forma, estrutura, base
+
+Objeto --> uma classe instanciada, criando algo a partir da estrutura da classe
+
+------------------------------------------------
+abstração, encapsulamento, herança, polimorfismo
+
+VB.Net linguagem utilizada
+linguagem da microsoft
+
+vinda do visual basic, mas em poo
+
+*pesquisa*
+linguagem orientada a poo com suporte total a uml,
+criada pela microsoft e distribuida pelo visual studio .net
+diferentes dos antigos visuais basics, esta versão ganhou poder com o poo
+parecida com java e c#
+
+CLASSES, PROPRIEDADES E TIPO DADOS
+
+tipos de marcadores de classes
+-- public: publico a qualquer outro codigo/classe/tela/projeto
+	publico a todos os projetos
+
+-- private: algo que so aql classe pode usar, restrinção de uso
+restrito somente a classe em que estas
+
+-- Friend: semelhante ao public
+public vc ve em qlq/todo lugar
+mas o friend ele é publico somente na classe aonde esta escrito
+publico ao projeto que esta inserido e restrito a outros
+
+-- Protected: usado dentro da classe, e de classes que o herdam seus poderes
+restrito a classe que esta declarado e das filhas do mesmo...
+
+
+TIPO DE DADOS
+
+-- Interger: Inteiros, facil
+-- Long: int maior
+-- Double: numeros decimais com ponto flutuante
+-- String: Texto
+-- Date: data
+-- DateTime: date e horas, juntos
+-- Boolean: verdadeiro ou falso
+
+
+*SUB -->  é o formato de declarar metodos*
+
+--Exercicios--
+Classe pra veiculos OK
+
+pensar em todos possiveis atributos, classes, metodos
+sempre focar em como o programase portara no final
+
+*dependencia: quando uma classe depende inteiramente da outra*
+
+criar dependencia
+é como se estivesse tratando de uma chave estrangeira, 
+como criamos o atributo publico é so referencia-lo na classe desejada
+
+List (Of nananam) --> traz uma lista do atributo desejado
+VAI USAR MUITAS VZS
+
+DIM - Outro tipo de declaração
+semelhante ao private, diferente na compilação, na forma como a memoria armazena
+
+NEW - Inicializar a variavel
+sen da erro na compilação
+
+
+
+
+como salvar os dados
+dar o famoso get do formulario
+e colocar em variaveis
+
+dim -- cria um objeto para salvar nele os dados de todos os campos
+dim nomeobjs as new nomeclasse
+exemplo --> dim objCliente as new Cliente
+
+apos isso usar a variavel objcriada para salvar os dados nela
+objcriada.nome do atributo = id do atributo.tipo do atributo
+exemplo --> objsCliente.CPF = CPFTxt.Text
+so repetir isso para todos os dados, asssim armazenara no objeto
+
+a respeito da lista, como salvar na lista
+crie um objeto que salve um por um oq o usuario digitar
+e apos isso crie a lista, aonde vc pega o objeto criado e salva nela
+exemplo --> objCliente.Contatos = New List(Of ClienteContatos)
+
+nome do objeto que ira salvar. nome da lista ja criada
+=
+add recurso da lista
+nova lista, iniciando ela
+of tipo da lista/classe criada
+
+
+
+*INSTANCIA*
+new --> cria da classe um novo objeto
+
+
+24 ESCOPO LISTA MSGBOX VALIDAÇÃO
+
+escopo de variavel/declaração
+aonde quero abranger a varivel
+seja ela, global, local, privada
+depende de como eu declarar ela
+na onde eu a declarar
+
+
+
+Classe MSGBOX()
+puxa um alertbox para dar uma msg
+pro usuario
+INFORMATION -- I do Windows, padrao utilizavel
+CRITICAL -- mensagens de erro
+EXCLAMATION -- informacoes de alerta
+
+
+
+
+
+
+

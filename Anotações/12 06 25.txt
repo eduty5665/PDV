@@ -1,0 +1,112 @@
+AULA 73 - TRIGGER FINAL
+
+CORREÇÃO
+
+DATE ADD
+dateadd(day,-1,@inicial)
+voce fala que é dia
+dps acrescenta ou decrementa
+chama a variavel ou coloca uma data padrao para comparação
+
+valor de credito liquido somado - valor de debito liquido somado = saldo anterior
+
+UNION ALL
+ele une os dados
+por exemplo fazer um select dar um union all
+dar outro select
+ele ira unir os valores dos dois selects
+
+union                                =!      union all
+une dados diferentes                         une todos os dados 
+com nome ou conteudo diferente               não importa nome/valor une tudo
+
+
+
+CAST =! CONVERT
+
+o cast é da linguagem SQL ou seja nao importa o SGBD ele ira funcionar
+ja o convert é especifico do SQL Server
+ambos tem a mesma funcionalidade, converter
+
+FIM SQL
+
+--================================================================================================================
+------------------------------------------AULA 01 - TESTE DE SOFTWARE---------------------------------------------
+--================================================================================================================
+
+-TESTE DE SOFTWARE
+
+qualidade nos processos
+testar, exercitar o codigo
+forçar ele ao maximo para encontrar os erros
+foca nisso
+demore nas atividades mas tenha qualidade
+
+TESTE
+organizar ideias
+oq testar primeiro
+
+realizando o cadastro
+a cada preenchimento testando
+campos obrigatorios
+
+sempre anotar as falhas, erros ou melhorias
+usar um bloco de notas junto
+assim fica mais facil nao esquecer
+
+ultimos dados de arrays
+limites, começo ou final
+
+salvar pelo botao de contatos tbm
+toda vez que criar um contato novo, salvar
+
+BREAKPOINTS
+Passar pelo codigo e colocar brakpoints em todas as funções
+testar função por função
+
+dica: desenvolver ja testando
+faz isso/aquilo e testa
+
+TEORIA X PRÁTICA
+pratica veio primeiro
+primeiro sofreram para chegar num modelo,
+e esse modelo deve ser seguido
+
+RECEBIMENTO
+analista entende a necessidade, cria tarefa
+recebemos essa tarefa com a obrigação de entende-la e faze-la da melhor forma
+desenvolver e testar
+subir o codigo no git com numero e desc
+concluir tarefa no sistema
+passar ao analista com uma boa desc
+analista aprova ou nao
+
+REGRA DE NEGOCIO
+entender as funcionalidades, o objetivo final
+depois entender cada funcionalidade separadamente
+e entender cada tela separadamente, bizurando cada uma
+
+TECNICAS DE TESTE
+erro apresenta mensagem, mostra algo claro
+falha é silenciosa, erros de logicas provavelmente, 
+congruem em alguma falha maior
+teste de caixa preta --> testes na tela
+teste de caixa branca --> testes no codigo, breakpoints
+testar dominios diferentes, acaso ja testei nome e cpf,
+testar endereço por exemplo, smp mudando os campos/dominios
+teste de limite, tamanho de campos, datas
+testes de criatividade, usar de criatividade para testar tudo
+
+CHECKLIST DE TESTES
+usar modelo excel para testar tudo tanto na branca como na preta
+
+CONCLUSÃO
+autonomia
+
+
+--================================================================================================================
+-----------------------------------------------------EXERCICIO----------------------------------------------------
+--================================================================================================================
+
+Gravar com oCam os seus testes da tela de venda.
+Tanto o teste de uso (caixa branca) quanto o teste do código (caixa preta).

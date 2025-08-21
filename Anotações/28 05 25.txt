@@ -1,0 +1,58 @@
+RELACIONAMENTO
+
+criar tabela de cliente contatos
+uma tabela que recebe o id do cliente como FK
+para criar essa fk deve-se ter uma relacao entre as
+duas tabelas, isso é, cria-se essa relação entre o id do cliente com o clienteid da clientecontatos
+isso restringe que todo cliente excluido exclua seus contatos automaticamente.
+
+FK -> Foreign Key, chave estrangeira
+PK -> Primary Key, chave primaria
+
+criar tabelas produto, forma de pagamento, veiculo
+
+COMO FICOU
+
+veiculo --> abastecimento
+produto
+			duas tabelas esperando a venda
+forma pagamento
+
+------------------------------------------------------------------------------------------------------
+
+Relação de Dependencia
+Pai --> Filho
+
+É quando voce força o excluimento ou alteração de uma fk sempre que for mecher na pk
+diferentemente de uma fk normal aonde vc so cria o relacionamento para restrições do sistema
+
+FK Normal
+Criamos o relacionamento sem dependencia entre uma pk e um campo fk de outra tabela
+
+-------------------------------------------------------------------------------------------------------
+
+COMANDOS SQL
+
+Insert --> para inserir um novo registro
+Use nome_banco -> para usar o banco ja criado
+Select -> para selecionar dados da tabela em questão
+From -> tabela a ser selectada
+Where -> condições/clausulas
+Order By -> ordenar por ...
+and -> somando condições, adicionando condições
+AS -> na frente do atributo para dar a ele um apelido
+
+--exercicio aula 63
+
+--1) Selecionar codigo, nome, cpf, cidade e estado da tabela cliente
+--quando o cliente for ativo, de São Paulo e seu RG seja nulo.
+
+
+--2) Selecionar todos os produtos que estão ativos e movimentam estoque
+
+
+--3) Selecionar codigo, descrição, custo, margem e preco dos produtos
+--quando o preco dos produtos estiver entre 1 e 100
+
+
+--4) Selecionar todas as formas de pagamento que estiverem em boleto

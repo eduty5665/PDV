@@ -1,0 +1,83 @@
+ESTRUTURA DE ELSE IF
+
+existem n meios de fazer testes de validação,
+aqui a gnt pode utilizar if por if
+ou, if dps else abrindo outro if dentro do else e fechando cada um dos if
+ou, podemos utilizar a maneira mais comum, aonde abrimos apenas 1 if,
+e vamos adicionando ElseIf pelo codiog, neste caso não precisamo fechar os elseif
+
+if (condicao) then
+     instrucao
+     elseif (condicao) then
+         instrucao
+         elseif condicao then
+end if 
+
+como representado acima os elseif nao tem fechamento apenas o if inicial
+facilitação da linguagem
+
+
+
+
+ESTRUTURA PARA SALVAMENTO
+
+Tu cria o objeto fora de todas as funcoes
+dps chama ele na funcao que deseja
+tu vai indicando cada campo do objeto ao seu respectivo campo na tela, pelos ids
+da uma mensagem que foi salvo com sucesso
+dos so limpa os campos, pegando id da tela e colocando valores nulos
+dar um focus no primeiro campo da tela, assim o usuario digita mais facilmente dps
+
+
+CODIGO REPETIDO
+
+Codigo Repetido --> desenvolvimento fraco
+coisa ruim, negativa
+
+pegar codigos que se utilizam n vezes, codigos reutilizaveis
+e criar/jogar eles dentro duma função
+assim so chamar a função toda vez que precisar, sem precisar lembrar de linhas e linhas de codigo
+
+REGIOES
+ a linguagem facilita ainda mais tudo
+ fica simples programar, podendo separar o codigo por regioes, facilitando na busca e debug
+ colocar metodos numa regiao, classes em outras, objetos em outra, salvamentos em outra,
+ eventos de buttons e afins em outra
+ e por ai vai, organizar fica facil
+
+
+apagando os dados da tela com funções com parametros
+so fazer um if dentro da função para quais campos apagar dentro do recebimento de determinado parametro
+
+
+SUB --> como se fosse uma void
+um metodo/função sem retorno
+
+FUNCTION --> função que retorna algum dado
+necessito declarar ela com um tipo
+
+função sempre retorna um tipo
+
+POPULANDO DATAGRID
+estabelecer ligação entre a grid e a lista das infos
+grid --> so aceita um tipo de valor/dado
+
+window resource --> recursos que podemos utilizar durante todo o programa
+ o sistema subentende tal ato
+
+quando tiver uma grid e precisar completar esta grid com dados
+conforme uma lista de clientes, convidados, emails, contatos
+enfim, para qualquer lista
+VIEW SOURCE --> estilo de juntar a lista na grid
+BINDING --> Comando que junta, concatena tais elementos, a grid com a lista
+
+itemsource = "{binding source={staticresource nome da viewsource}}"
+utiliza este comando na grid para ela procurar e trazer a view source
+por intermedio da itemsource
+
+binding tudo que é ligação a respeito disso
+desde de linha/coluna a linha/coluna a datagrid completa,
+tudo quanto eu for concatenar, ajuntar eu me utilizo desta parte
+
+minutagem 9:42
+continuar a codar amanha

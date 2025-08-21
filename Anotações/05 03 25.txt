@@ -1,0 +1,47 @@
+Wpf --> design de tela, intermedario
+padroes de interface da web, criar oq quiser
+nao limitar aos recursos
+
+windows --> telas
+	estrutura de pastas
+	hierarquia = cadastro, janelas, classes, relatorios(tela pra chamar o relatorio, colocar info pra ele), rpts (tela de relatorios prontos), imagens
+xaml --> piq html
+	tag window como se fosse tag html
+	tag grid como se fosse tag body
+	o head nao tem tag mas é colocado antes do body tbm
+
+gridlayout -->
+dividir em rows e columns
+primeiro vc declara como se fosse variavel,
+depois voce a programa
+tem que dizer quanto vao ter e o tamanho dps so delcara pegando o indice como dum vetor, indice 0 linha 1
+
+controles basicos
+	-label --> muitas propriedades assim como css
+		stretch alinha com o conteudo geral do elemneto, esta na coluna, ira alinhar com o total da coluna
+	-textbox--> piq sla telinha de python, tu clia um label em baixo a text pro usuario digitar
+		bem simples e tranquilo
+	
+	*qaundo colocar a responsividade, o * para restante de tela, ou divisão do tamanho, não use width, deixe o sistema se ajeitar*
+
+tab index -- quando der enter nos lementos o cursor segue seu enter aonde quer que vc va, vc define a ordem do tab index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

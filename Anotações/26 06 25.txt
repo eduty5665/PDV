@@ -1,0 +1,40 @@
+ENTITY FRAMEWORK
+
+Faz a ponte entre os dados e codigo
+dentro do projeto cria um contexto,
+atraves do framework ele cria uma replica das tabelas no codigo
+o contexto
+cria um diagrama de classes com base nas tabelas do bd dps transforma em classes
+pu seja cria o bd primeiro, dps so pede pra ele transformar
+
+existe um abismo entre sql e codigo
+pode parecer serem iguais e estarem proximos,
+mas a diferença é gigantesca
+
+sempre que mexemos com determinada classe, como cliente
+estamos mexendo literalmente com a classe
+dps cabe ao codigo unir as mudanças do codigo para o banco
+
+
+*Expressões Lambdas*
+
+usadas por nos inicialmente em listas, where, select
+so trazer/configurar para o contexto, para o entity
+
+
+---------------#-----------------------------#---------------------------#------------------------------------#--------------------------
+
+CRIANDO A MODEL
+
+Linkando o projeto com o banco de dados SQLServer
+Pela plataforma do entity
+
+novo item, criando data entity
+ter instalado tudo certo não dara erro em nda
+colocar yes, para inculir a senha de conexão
+
+Contexto ---> recebe um nome para variavel, para poder manipula-lo
+a grosso modo, uma lista com todas as classes
+la voce consegue pesquisar pelo atributo desejado
+contexto. classe. atributo
+simples e rapido

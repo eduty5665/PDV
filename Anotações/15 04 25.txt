@@ -1,0 +1,67 @@
+AUTO COMPLETE
+
+Semelhante ao text box, mas carrega uma lista consigo
+voce adiciona algum elemento e salva
+ele vai pegando desta lista e mostrando abaixo
+
+<!--<ctTextBox:ctAutoComplete x:Name="Grupotxt" HorizontalAlignment="Stretch" Margin="5,23,0,-0" TextWrapping="Wrap" TabIndex="3" CharacterCasing="Upper" BorderBrush="#FF7189CF"/>-->
+'Grupotxt.ItemSource = lstProd.Select(Function(p) p.Grupo).t
+
+DISTINCT
+
+traz elementos distintos
+ele tira/evita a repetição de palavras na lista do auto complete
+
+por exemplo no trecho de codigo acima
+ele esta trazendo todos os dados da lista, ate mesmo os repetidos
+isso acaba ficando meio prejudicial
+para melhorar usamos o distinct
+tirando as repetições
+
+--#---------------------------------------------#----------------------------#-----------------------#-----------------------------------------------#-----------------------------------------------------------------------
+
+
+52-LAÇO DE REPETIÇÃO
+
+--FOR
+
+FOR contador TO limite
+	CONDICAO/CODIGO
+Next
+
+
+	''Dim tbitem As TabItem
+        'For i As Integer = 0 To menu.Items.Count - 1
+        '    tbitem = menu.Items(i)
+        '    If tbitem.Header = uc.Tag Then
+        '        menu.SelectedItem = tbitem
+        '        Exit Sub
+        '    End If
+        'Next
+
+        For Each tbitem As TabItem In menu.Items
+            If tbitem.Header = uc.Tag Then
+                menu.SelectedItem = tbitem
+                Exit Sub
+            End If
+        Next
+
+Laço for como qualquer outro for
+ele tem um contador que fica num limite que pode ser estipulado
+ou nao dando a visao do limitador pela variavel
+
+for começa
+next encerra
+
+----------------------#-----------------------#-------------------------------#----------------------------------------#-----------------------------------------
+
+PARENT
+
+retorna o pai do elemento
+elemento pai e filho
+
+
+
+
+
+

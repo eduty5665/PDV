@@ -1,0 +1,47 @@
+STORE PROCEDURE - SP
+
+Uma consulta salva para utilização futura
+consultas que são utilizadas com mais frequencia
+a gnt salva para usar mais tarde
+
+tratar dados no sql, mais facil
+depois so levar pro VB.NET ja tratado
+
+criar a procedure no sql
+so chamar a procedure depois no vb.net
+
+CREATE PROCEDURE NOMEPROCEDURE
+	VARIAVEIS--ENTRYS
+AS
+	SELECT
+
+
+*tratar todos os dados no SQL*
+
+EXEUCTAR AS PROCEDURES
+
+-Voce pode executar pelo botao direito
+aonde voce clica na propria procedure ali em programação, procedures
+com o botao direito, dando chance de modificar ou executar
+
+-Ou voce pode executar pelos comandos
+exer @return_value = [nome_banco].[nome_procedure]
+     @variavel = valor
+     @variavel = valor
+
+---depois podemos dar um select no valor de retorno
+select 'return value' = @return_value
+
+--EXERCICIO - AULA69
+
+--01
+--CRIAR STORE PROCEDURE QUE TRAGA NUMERO DA VENDA, VENDAS DE UM DETERMINADO PERIODO
+--NOME DO CLIENTE
+--COD PROD, DESC, QTDE, VR UNIT, TOTAL
+
+
+--02
+--SOLUTEC
+--PROCEDURE REL_IMP_VENDA
+--EXPLICAR O QUE ELA FAZ, CADA COMANDO
+--PESQUISAR E REALEMENTE EXPLICAR TUDO

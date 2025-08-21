@@ -1,0 +1,22 @@
+new --> ativa um construtor da classe
+quando vc da o new vc instancia a classe, craindo um objeto que herdara todos os atributos e metodos da classe
+
+construtores: são para iterações entre as classes
+alguns ja existem como o new
+mas podemos criar outros construtores para manipular melhor os dados
+
+#delcaração de um novo construtor
+PUBLIC SUB NEW()
+	INITIALIZECOMPONENT()
+END SUB
+
+para diferenciar um construtor do outro são pelos parametros
+pode-se colocar quantos e quais quiser
+isso da a unicidade ao construtor
+
+
+visibilidade
+comando visibility
+- collapsed - escondido
+- hidden - invisivel
+- visible - visivel

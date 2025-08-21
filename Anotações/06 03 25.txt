@@ -1,0 +1,35 @@
+checkbox --> mesma coisa do html
+coloca a check box e ela tem as mesmas propriedades dos outros elementos
+
+datagrid --> serve como uma planilha que recebe e configura os dados do banco de dados
+grid --> datagrid --> data grid column ou row --> oq que que colocar, datagridtextcolumn
+
+button --> sempre alinhado a direita, isso se da pelo alinhamento da linha
+
+exercicio 01 --
+	titulo e data cad
+	cpf, rg, nome inativo
+	logradouro, numero, bairro
+	cidade, estado, cep, complemento
+	tipo contato, dados do contato, observações mias e menos
+	datagrid dos campos
+
+		salvar e excluir
+
+
+TABCONTROL --> criar abas/guias na mesma janela, facilitando o direcionamento do usuario
+tu cria a tabcontrol dps tu usa o tab item para criar cada aba
+voce se usa de grid para colocar n elementos na aba, igual o group box
+
+MAINWINDOW --> tela principal precisamos dela como um menu
+voce adentra nela e pode navegar pelas outras guias por ela
+	title -- sempre um slogan da empresa
+
+
+
+
+
+
+
+
+
