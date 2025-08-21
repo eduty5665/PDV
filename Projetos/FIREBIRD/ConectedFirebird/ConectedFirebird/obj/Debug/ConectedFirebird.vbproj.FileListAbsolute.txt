@@ -1,0 +1,24 @@
+C:\Users\admin\AppData\Local\Temporary Projects\ConectedFirebird\bin\Debug\ConectedFirebird.exe.config
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\ConectedFirebird.exe.config
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\ConectedFirebird.exe
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\ConectedFirebird.pdb
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\ConectedFirebird.xml
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.dll
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.Firebird.dll
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.xml
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.Firebird.pdb
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.vbprojResolveAssemblyReference.cache
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\MainWindow.baml
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\MainWindow.g.vb
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\Application.g.vb
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird_MarkupCompile.cache
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.g.resources
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.Resources.resources
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.vbproj.GenerateResource.Cache
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.exe
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.xml
+Z:\Treinamento\eduty\Projetos\WPFNET\ConectedFirebird\ConectedFirebird\obj\Debug\ConectedFirebird.pdb

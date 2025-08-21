@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sizex" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PESSOA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ENDERECO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PESSOACONTATOS" Relationship="Self.FK_PESSOACONTATOS_1" FromRole="PESSOA" ToRole="PESSOACONTATOS" />
+  </EntityType>
+  <EntityType Name="PESSOACONTATOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PESSOAID" Type="Int32" />
+    <NavigationProperty Name="PESSOA" Relationship="Self.FK_PESSOACONTATOS_1" FromRole="PESSOACONTATOS" ToRole="PESSOA" />
+  </EntityType>
+  <Association Name="FK_PESSOACONTATOS_1">
+    <End Role="PESSOA" Type="Self.PESSOA" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PESSOACONTATOS" Type="Self.PESSOACONTATOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PESSOA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PESSOACONTATOS">
+        <PropertyRef Name="PESSOAID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SizexEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PESSOA" EntityType="Self.PESSOA" />
+    <EntitySet Name="PESSOACONTATOS" EntityType="Self.PESSOACONTATOS" />
+    <AssociationSet Name="FK_PESSOACONTATOS_1" Association="Self.FK_PESSOACONTATOS_1">
+      <End Role="PESSOA" EntitySet="PESSOA" />
+      <End Role="PESSOACONTATOS" EntitySet="PESSOACONTATOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
