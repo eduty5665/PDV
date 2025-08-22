@@ -31,6 +31,88 @@ O repositório contempla diferentes etapas do aprendizado e desenvolvimento:
 
 ---
 
+## ⚙️ Guia de Instalação e Execução
+```bash
+Para garantir que o sistema **Ponto de Venda (PDV)** funcione corretamente em sua máquina, siga os passos abaixo com atenção:
+```
+
+### 🔽 1. Download do Projeto
+- Faça o download do repositório ou clone diretamente do GitHub:  
+  ```bash
+  git clone https://github.com/eduty5665/PDV.git
+  ```
+
+### 🛠️ 2. Instalação dos Recursos Necessários
+
+- Certifique-se de ter instalado os seguintes recursos antes de abrir o projeto:
+  ```bash
+  Visual Studio 2012 (ou superior) → Para compilar e executar o código em .NET/WPF.
+
+  SQL Server Management Studio (SSMS 2019) → Para gerenciar o banco de dados e executar scripts SQL.
+
+  Entity Framework → ORM utilizado no projeto para integração entre banco de dados e aplicação.
+
+  Crystal Reports → Biblioteca necessária para geração de relatórios dentro do sistema.
+
+  WPF (Windows Presentation Foundation) → Framework da Microsoft para a interface gráfica do projeto.
+
+  .NET Framework (versão compatível com o projeto, ex: .NET 4.5 ou superior) → Ambiente de execução do sistema.
+  ```
+
+### 🗄️ 3. Configuração do Banco de Dados
+
+- Abra o SQL Server Management Studio 2019 (SSMS):
+  ```bash
+  Crie um novo banco de dados ou utilize um existente para importar as tabelas.
+
+  Copie e cole o script SQL fornecido na pasta do projeto dentro do SSMS.
+
+  Execute o script para criar todas as tabelas, procedures e dados necessários para o funcionamento do PDV.
+  ```
+
+### 💻 4. Abrindo o Projeto
+
+- Abra o Visual Studio 2012:
+  ```bash
+  Vá até a opção Abrir Projeto/Solução e selecione o arquivo .sln do repositório.
+
+  Configure as References do projeto:
+
+  - Adicione novamente pacotes e bibliotecas caso o Visual Studio aponte algum erro de referência (Entity Framework, Crystal Reports, etc).
+
+  - Verifique se o projeto está apontando para a versão correta do .NET Framework.
+  ```
+
+### ⚡ 5. Compilação do Código
+
+- Dentro do Visual Studio, selecione o modo Build Solution (Ctrl + Shift + B):
+  ```bash
+  Aguarde a compilação.
+
+  Corrija eventuais erros de dependências ou versões de framework que possam surgir.
+  ```
+### 🧪 6. Execução e Testes
+
+- Após a compilação bem-sucedida, rode o projeto pelo Visual Studio (tecla F5):
+  ```bash
+  Realize os testes básicos:
+
+  - Cadastro de produtos.
+
+  - Registro de vendas.
+
+  - Emissão de relatórios (Crystal Reports).
+
+  - Verificação do estoque e integração com o banco de dados.
+
+  - Caso algum erro ocorra:
+
+    Verifique as configurações de conexão com o banco no arquivo de configuração do projeto.
+
+    Reinstale ou reconfigure as bibliotecas necessárias.
+  ```
+---
+
 ## 🔗 Links
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://eduty5665.github.io/Portifolio/)  
